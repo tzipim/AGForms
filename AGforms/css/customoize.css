@@ -86,7 +86,7 @@ ul.thirdinput li span img{ margin-top: -19px;
 	
 .totaltype { font-weight:bold; color:#003399; font-size:18px;}
 
-.submitbutton { float:right; color:#fff; background:#0066cc; text-align:center; width:67px; height:31px; font-weight:normal; line-height:28px; border:none;margin:8px 0px 8px 0px; }
+.submitbutton { float:right; color:#fff; background:#0066cc; text-align:center; width:67px; height:31px; font-weight:normal; line-height:28px; border:none;/*margin:8px 0px 8px 0px; */padding:0px;margin-top:10px;}
 .submitbutton a{ color:#fff; text-decoration:none;}
 
 
