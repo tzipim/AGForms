@@ -1,0 +1,112 @@
+﻿.calendar
+{
+    width:210px;
+}
+.full-width {
+  width: 100%;
+}
+.ui-calendar {
+  direction: rtl;
+  text-align: center;
+  border: 0px none;
+  font-size: 12px;
+  font-family: Arial, Verdana;
+}
+.ui-calendar td {
+  text-align: center;
+}
+.ui-calendar .week-days td {
+  font-weight: bold;
+  font-size: 12px;
+  border-bottom: #666666 1px solid;
+}
+.ui-calendar .days td {
+  color: #000000;
+}
+.ui-calendar .days input {
+  color: black;
+  width: 2em;
+  margin: 3px;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #808080;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+.ui-calendar .days input:hover {
+  background: #ffefd5;
+}
+.ui-calendar .days .selected {
+  /*background: #ffdab9;*/
+      border:1px solid #0000FF;
+    color:#FF0000;
+}
+.ui-calendar .today {
+  background: #DCDCDC;
+}
+.month-year {
+  font-weight: bold;
+  background-color: #eeeeee;
+}
+.month-year img {
+  cursor: pointer;
+}
+.month-year span {
+  color: #FFFFFF;
+}
+.month-year tr {
+  background: #0000a7;
+  height: 25px;
+}
+.month-year .year {
+  position: relative;
+}
+.month-year .year span:first-child {
+  cursor: pointer;
+}
+.month-year .year .year-display,
+.month-year .month .month-display{
+  cursor: pointer;
+  position: absolute;
+  background: #ffefd5;
+  direction: ltr;
+  text-align: center;
+  height: auto;
+  border: 1px solid #666666;
+  left:0px;
+  top:20px;
+}
+.month-year .year .year-display div {
+  background: #ffefd5;
+  cursor: pointer;
+}
+.month-year .year .year-display div:hover {
+  background: #ffdab9;
+}
+.month-year .month {
+  position: relative;
+}
+.month-year .month span:first-child {
+  cursor: pointer;
+}
+.month-year .month .month-display div {
+  background: #ffefd5;
+  cursor: pointer;
+}
+.month-year .month .month-display div:hover {
+  background: #ffdab9;
+}
+
+
+
+.ui-calendar .days input.hover{
+    background:#ffdab9;
+}
+
+
+.ui-calendar .year-display div.hover,
+.ui-calendar .month-display div.hover{
+    background:#ffdab9;
+}
+

@@ -1,0 +1,113 @@
+#ValidatorHelper
+{
+	position: absolute;
+    z-index: 999999;
+    text-align:center ;
+    bottom:0;
+}
+  
+  
+  
+/*Slider*/
+ .slide 
+{
+	display:block;
+	margin: 0;
+	padding: 0;
+	border-bottom: solid 2px red;
+	text-align:center;
+	font-size:9pt;
+	background: url(HtmlValidatorHelper_btn_slide.gif) no-repeat center top;
+	height:25px;
+	opacity: 0.8;
+    filter: alpha(opacity=85);
+}
+ 
+#btn-slide {
+	TEXT-ALIGN: center; 
+	WIDTH: 120px;
+	BACKGROUND: url(HtmlValidatorHelper_white_arrow.gif) no-repeat right -50px;
+	HEIGHT: 25px; 
+	COLOR: black; 
+	TEXT-DECORATION: none; 
+	PADDING-TOP: 7px;
+	margin-right : 5px;
+}
+#btn-close {
+	TEXT-ALIGN: center;
+    WIDTH: 10px; 
+    BACKGROUND: url(HtmlValidatorHelper_close.gif) no-repeat left 10px; 
+    HEIGHT: 25px; 
+    TEXT-DECORATION: none;
+}
+
+
+a #btn-close:focus {
+	outline: none;
+}
+
+a #btn-slide:focus {
+	outline: none;
+}
+
+#btn-slide.hidden {
+	background-position: right 10px;
+}
+
+
+
+/*Content*/
+
+#ValidatorHelper_content 
+{
+	 background: white;
+	display:block ;
+	text-align:center;
+	 
+}
+#ValidatorHelper_content_pager
+{
+	width:110px;
+}
+#ValidatorHelper  #lblErrorsNumber
+{ 
+	width:70px;
+	display:block;
+	float:left;
+}
+
+#ValidatorHelper #lblCurrentErrorWarning
+{
+	 width:16px;
+	 height:16px;
+	 background:url(HtmlValidatorHelper_Block.png)  no-repeat left middle; 
+	color:Red;
+	font-size:10pt;
+	 
+}
+
+#ValidatorHelper  #BtnBack
+{ 
+	
+	display:block;
+	background:url(HtmlValidatorHelper_Back.png)  no-repeat center top;
+	float:left;
+	width:20px;
+	height:12px;
+}
+#ValidatorHelper #BtnNext
+{
+	background: url(HtmlValidatorHelper_Next.png) no-repeat center top;
+	display:block;
+	float:right;
+	width:20px;
+	height:12px;
+}
+
+#ValidatorHelper_message
+{
+	 
+}
+
+ 
+ 

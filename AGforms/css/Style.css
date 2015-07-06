@@ -1,0 +1,560 @@
+﻿
+
+* {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+
+/*  built-in style */
+.btnMouseOn {
+    BORDER: white 2px outset;
+}
+
+.btnRegular {
+    BORDER: gray thin;
+    MARGIN: 2px;
+}
+
+.tfsCalendar {
+    DISPLAY: inline;
+}
+
+.tfsImgBtn {
+    DISPLAY: inline;
+    MARGIN: 1px;
+}
+
+.tfsImgBtnMouseOn {
+    BORDER: white 1px outset;
+    MARGIN: 0px;
+}
+
+.tfsImgBtnLock {
+    DISPLAY: none;
+    MARGIN: 1px;
+}
+
+.tfsInputTextLock {
+    BORDER: 1px solid;
+    BACKGROUND-COLOR: transparent;
+}
+
+.tfsInputButtonLock {
+    DISPLAY: none;
+}
+
+.tfsToolBar {
+    BORDER: thin outset;
+    PADDING-LEFT: 2px;
+    PADDING-TOP: 2px;
+    MARGIN-BOTTOM: 2px;
+    BACKGROUND-COLOR: activeborder;
+}
+
+.tfsMainDiv {
+    BORDER-WIDTH: 1px;
+    OVERFLOW: hidden;
+    WIDTH: 17cm;
+    BACKGROUND-COLOR: white;
+}
+
+.tfsScrollDiv {
+    OVERFLOW: auto;
+    WIDTH: 21cm;
+    BACKGROUND-COLOR: white;
+}
+
+.tfsOuterDiv {
+    BACKGROUND-COLOR: activeborder;
+    TEXT-ALIGN: center;
+}
+
+.tfsInputText {
+}
+
+.tfsInputRadio {
+}
+
+.tfsInputCheckBox {
+}
+
+.tfsInputTextArea {
+}
+
+.tfsInputCombo {
+}
+
+.tfsInputButton {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    COLOR: #003366;
+    background-color: #fff4b2;
+    padding: 0px;
+    margin: 0px;
+}
+
+.underLock {
+}
+
+.ToPrint {
+    display: none;
+}
+
+/* General style */
+.myAsteria {
+    color: #FF0000;
+}
+
+.noShow {
+    display: none;
+}
+
+* {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+a:link, a:visited {
+    color: #006699;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 span, h2 span {
+    float: left;
+}
+
+.koteret {
+    font-weight: bold !important;
+    font-size: 13px !important;
+}
+
+.leftTitle {
+    padding-right: 20px !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: 23476b;
+}
+
+.leftTitleLock {
+    text-align: left !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: 23476b;
+}
+
+.textheader {
+    padding-bottom: 2px !important;
+    vertical-align: middle !important;
+    padding-right: 100px !important;
+    font-weight: bold;
+    font-size: 12px;
+    color: #23476b;
+}
+
+        .headerBottom {
+            background-image: url("title_with_line.gif");
+            background-repeat: no-repeat;
+            height: 26px;
+        }
+
+.myTitle {
+    padding-right: 20px !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: 23476b;
+}
+
+.formTitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: 23476b;
+}
+
+.formTitle1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: #23476b;
+}
+
+.formTytle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: 23476b;
+}
+
+.myTytle {
+    padding-right: 20px !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: 23476b;
+}
+
+.grayHeader {
+    background-color: #7F7F7F;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 120% !important;
+}
+
+/*** Background Design ***/
+.designBox, .disabled {
+    width: 100%;
+    margin-bottom: 10px !important;
+    padding: 0px;
+    direction: ltr;
+    text-align:right;
+}
+
+.disabled {
+    background: #e9e9e9;
+}
+
+    .designBox, .designBox td, .disabled, .disabled td {
+        border: 0px none transparent;
+    }
+
+        .designBox h1, .disabled h1 {
+            font-size: 140%;
+            color: #cc9900;
+        }
+
+        .designBox h2, .disabled h2 {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .designBox td, .disabled td {
+            font-size: 13px;
+            direction: rtl;
+            height:10px !important;
+        }
+
+        .disabled h1 {
+            color: gray;
+        }
+
+        .disabled .stripesTbl thead td {
+            background-color: #f1f1f1;
+            color: gray;
+        }
+
+        .disabled td input, .disabled td textarea, .disabled td select {
+            border: 1px solid #C5C6CB;
+        }
+
+input.tfsInputradio {
+    border: 0px !important;
+}
+
+.designBox {
+    width: 100%;
+    background: #e5f4ff;
+    padding: 0px;
+    direction: ltr;
+}
+
+/* Corners & Shadows */
+.topLft {
+    height: 10px;
+    font-size: 3px !important;
+}
+
+.topRt {
+    width: 10px;
+    padding: 0px;
+    margin: 0px;
+    height: 10px;
+    font-size: 3px !important;
+}
+
+.lftBrdr {
+    font-size: 3px !important;
+    width: 10px;
+}
+
+.rtBrdr {
+}
+
+.btmLft {
+    height: 10px;
+    font-size: 3px !important;
+}
+
+.btmShdw {
+    font-size: 3px !important;
+}
+
+.btmRt {
+    height: 10px;
+    font-size: 3px !important;
+}
+
+/* Stripes Table */
+.stripesTbl {
+    width: 100%;
+    margin: 8px 0px 3px 0px;
+    border-width: 1px 1px 0px 0px;
+}
+
+    .stripesTbl td {
+        text-align: right;
+        border-width: 0px 0px 1px 1px;
+        font-weight: normal;
+    }
+
+    .stripesTbl thead td {
+        background-color: #fff7d1;
+        font-size: 13px;
+        font-weight: normal;
+        text-align: center;
+        border: 1px solid #CCCDD1;
+        border-width: 0px 0px 1px 1px;
+    }
+
+
+/* Transparent Table */
+.noStripesTbl td {
+    font-weight: normal !important;
+    font-size: 13px;
+    border-width: 0px !important;
+    text-align: right;
+}
+
+
+
+/*APP STYLES*/
+.fright{
+    float:right;
+}
+
+.fleft{
+    float:left;
+}
+
+.collabelwd110
+{
+    width:110px;
+
+}
+
+.label
+{
+    width:140px;
+    padding:7px 0px 5px 15px;
+}
+
+
+input
+{
+    width:90px;
+}
+
+.userinput{
+    width:140px;
+    padding-left:15px;
+    padding-top:7px;
+}
+
+.userinputcombo{
+    width:140px;
+    padding-left:15px;
+    padding-top:7px;
+}
+
+.userinputradio
+{
+    width:140px;
+    padding-left:15px;
+    padding-top:7px;
+}
+
+
+.tfsInputButtonBlue {
+    font-weight: bold;
+    font-size: x-small;
+    color: #003366;
+    background-color: #C6D9F1;
+    padding: 0px;
+    margin: 0px;
+    border:1px solid #1E4678;
+    padding:2px;
+    width:100px;
+}
+
+
+
+.customTable {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #cccdd1;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    margin: 8px 0 3px;
+    width: 100%;
+     background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #cccdd1;
+}
+
+.customTable thead td {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff7d1;
+    border-color: #cccdd1;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    font-size: x-small;
+    font-weight: normal;
+    text-align: center;
+}
+
+.customTable tbody td 
+{
+     -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #cccdd1;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    font-size: x-small;
+    font-weight: normal;
+    text-align: center;
+}
+
+.recptsum
+{
+    background-color: #ffffff;
+    border: 1px solid #cccdd1;
+    margin-top: -8px;
+    padding: 2px;
+    width: 773px;
+}
+
+
+
+#section_Receipts input {
+    width:65px ;
+}
+
+#section_Receipts #ddlArticle {
+    width:85px ;
+}
+
+.tablecelldiv
+{
+    border-bottom:1px solid #cccdd1;
+    background-color: #ffffff;
+    margin-top: -7px;
+    padding: 2px ;
+    height: 20px;
+}
+
+.tablecelldivborderright {
+    border-right: 1px solid #cccdd1;
+}
+.tablecelldivborderleft
+{
+     border-left: 1px solid #cccdd1;
+}
+
+
+#btnSubmit{
+    float:left;
+}
+
+.headerimage {
+    background-image: url("../../main.png") ;
+    background-repeat: no-repeat;
+}
+
+.clear{clear:both;}
+
+.sectionBox
+{
+    margin-bottom:10px;
+    width:645px;
+
+    
+}
+
+.sectionHeader{
+    -moz-border-radius: 8px 8px 0px 0px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
+
+
+    background-color:#A8C9EC;
+    height:20px;
+    color: #23476b;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 20px;
+
+    -webkit-box-shadow: #B3B3B3 3px 3px 3px;
+    -moz-box-shadow: #B3B3B3 3px 3px 3px; 
+    box-shadow: #B3B3B3 3px 3px 3px;
+}
+
+.sectionBody{
+    background-color:#E5F4FF;
+    padding:10px;
+    -webkit-box-shadow: #B3B3B3 3px 3px 3px;
+    -moz-box-shadow: #B3B3B3 3px 3px 3px; 
+    box-shadow: #B3B3B3 3px 3px 3px;
+}
+
+.sectionFooter{
+    background-color:#E5F4FF;
+    -webkit-border-radius: 0px 0px 8px 8px;
+    -moz-border-radius: 0px 0px 8px 8px;
+    border-radius: 0px 0px 8px 8px;
+
+    -webkit-box-shadow: #B3B3B3 3px 3px 3px;
+    -moz-box-shadow: #B3B3B3 3px 3px 3px; 
+    box-shadow: #B3B3B3 3px 3px 3px;
+}
+
+
+.sectioncontainer
+{
+    padding:5px;
+}
+/*.divtableheader div
+{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff7d1;
+    border-color: #cccdd1;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    text-align: center;
+    height:15px;
+    padding:3px 6px;
+    margin-top:10px;
+}*/
+
+#agat_popup
+{
+    margin-left:10px !important;
+    direction:rtl;
+    border:1px solid red;
+}

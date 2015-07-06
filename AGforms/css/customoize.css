@@ -1,0 +1,250 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body { background:#f7f6f6; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#014c8b; text-align:right; line-height:22px;}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+.container { width:981px; margin:0 auto; border:solid 1px #6699cc; border-top:none; border-bottom:none; margin:0 auto; box-sizing:border-box;   }
+.header { min-height:105px; width:100%; background:#e0eaf4; border-bottom:solid 1px #9bc5e2;}
+.wrapper { padding:0 32px 0 32px; width:100%;box-sizing:border-box; }
+.logo-left { float:right; margin-top:21px;}
+.logo { float:left; margin-top:12px;}
+
+.contet-center { padding-top:40px; width:100%; float:left; box-sizing:border-box; background:#fff;}
+.heading1 { font-weight:bold; font-size:30px; float:right; }
+.heading2 { font-weight:bold; font-size:24px; float:right;  }
+.saprate-line { width:100%; height:4px; background:#014c8b; float:left; margin:30px 0 24px 0;}
+
+ul.first-view { display:block; float:right; margin-top:24px; position:relative;}
+ul.first-view li { display:block; float:left;   margin-left:20px; width:180px;}
+ul.first-view li span { float:right; text-align:right; }
+ul.first-view li span img { position:absolute; top:36px; right:433px;}
+.top2 { margin-top:7px!important;}
+
+
+ul.first-view li input[type="text"] , .inputtext {direction:rtl; width:180px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; }
+
+.litabdate { width:127px!important}
+.input-2 { width:127px!important;}
+
+.third_block { width:100%; margin-top:7px; font-weight:bold; float:left;}
+
+ul.radiotext { display:block; margin-top:22px; }
+ul.radiotext li {  display:block; float:right; font-size:18px; color:#9b9b9b; font-weight:normal; margin-left:20px;}
+
+
+ul.thirdinput { display:block; float:right; width:100%;}
+ul.thirdinput li { display:block; float:right; margin-left:20px; position:relative; width:180px; font-weight:normal;}
+ul.thirdinput li input[type="text"] {width:180px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; text-align:right;  }
+ul.thirdinput li span {float:right; text-align:right; }
+ul.thirdinput li span img{ margin-top: -19px;
+    position: absolute;
+    margin-left: -190px;
+	 margin-top:19px\0;
+     
+}
+
+
+
+.saprate_2 { width:100%; height:1px; background:#065bbd; float:left; margin-bottom:21px; margin-top:22px;}
+
+.heading_3 { font-weight:bold; float:left; text-align:right; width:100%; font-size:24px; margin-bottom:17px;}
+
+.clear { clear:both;}
+
+
+
+.Grid {box-sizing:border-box;  width: 100%; border: 1px solid #0066cc; border-collapse:collapse; line-height:20px; font-size:13px; color:#003399; font-weight:bold;  font-size:14px; font-family:Arial, Helvetica, sans-serif; position:relative;}
+    .Grid tr{border-top-color: #0066cc; border-bottom-color: #0066cc; height:20px; }/*first line*/
+    .Grid td { border: solid 1px #0066cc;  font-size:14px; padding:7px 6px 7px 6px;  border: solid 1px #0066cc; background:#e8edf2; } /*table border colour*/
+  
+   /*heading*/ .Grid th { padding: 0; color: #003399; background: #c7d8eb; height:28px; border: solid 1px #0066cc;
+     cursor:pointer; text-align:right; font-size:14px; font-weight:bold; padding-right:5px;  line-height:28px;}
+	 
+.Grid .alt { background-color: #eeeef0; }/*second line*/
+.Grid tr.bottom-table { padding:0px!important; line-height:0px!important; margin:0px!important; font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#666; font-weight:normal; text-align:right!important;}
+.Grid tr.bottom-table td { padding:18px 8px 18px 0;}
+.Grid .pgr {background: #8abdf2; height:30px;}
+    .Grid .pgr table { margin: 1px 0; height:30px; }
+    .Grid .pgr td { border-width: 0; padding: 0 8px; border-left: solid 1px #666; font-weight: bold; line-height: 12px; height:30px; }   
+    .Grid .pgr a { color: #666; text-decoration: none; height:30px; cursor:pointer; }
+    .Grid .pgr a:hover { color: #000; text-decoration: none; height:30px;cursor:pointer; }
+
+
+.Grid input  { width:110px; height:25px; border:solid 1px #999; color:#666666; font-size:14px; text-align:right; padding-right:5px; float:right;direction:rtl;}
+	
+.Grid span img { padding-top:7px; float:left; padding-right:7px; float:right;}
+.Grid span img.drop {  position: absolute;
+    right: 50px;
+    top: 60px;}
+	
+.totaltype { font-weight:bold; color:#003399; font-size:18px;}
+
+.submitbutton { float:right; color:#fff; background:#0066cc; text-align:center; width:67px; height:31px; font-weight:normal; line-height:28px; border:none;margin:8px 0px 8px 0px; }
+.submitbutton a{ color:#fff; text-decoration:none;}
+
+
+
+.saprate_3 { width:100%; height:1px; background:#065bbd; float:left; margin-bottom:14px; margin-top:39px;}
+
+ul.footer-4block { display:block; width:100%; padding:0px; }
+ul.footer-4block li{ display:block; float:left; width:200px; margin-left:18px;  position:relative; }
+
+li.last {  margin-right:0px!important;}
+li.last3 input{  margin-right:-5px!important;}
+li.last2 {  margin-left:18px!important;}
+
+ul.footer-4block li input[type="text"] {width:213px;  height:24px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; }
+ul.footer-4block li span img{ position:absolute; right: 6px;
+    top: 36px;}
+ul.footer-4block li span { font-weight:normal; font-size:18px;}
+
+.submit2 { width:131px; height:41px; background:#0066cc; float:left; text-align:center;  line-height:30px; border:none; color:#FFFFFF; }
+.submit2 a { color:#fff; text-decoration:none;}
+
+.footer { background:#e0eaf4; border-top:solid 1px #6699cc; border-bottom:solid 1px #6699cc; float:left; display:block; width:100%; text-align:center; padding-top:16px; padding-bottom:16px; font-weight:normal;}
+
+/*.tfsCalendar{
+    height:18px !important;
+    width:17px !important;
+    background-image:url(../img/caleder-view.png);
+    background-repeat:no-repeat;
+    background-color: #ffffff !important;
+    border: 0px solid #FFFFFF !important;
+    float:left;
+    margin-top: 10px;
+    float:right;
+    margin-right:5px;
+
+}*/
+
+.calendarcontainer
+{
+    position:relative !important;
+    margin-top:22px;
+}
+
+.tfsCalendar{
+    height:18px !important;
+    width:17px !important;
+    background-image:url(../img/caleder-view.png);
+    background-repeat:no-repeat;
+    background-color: #ffffff !important;
+    border: 0px solid #FFFFFF !important;
+    position:absolute;
+    left:5px;
+    top:14px;
+}
+
+
+.calendarinput {
+    direction: rtl;
+    width: 180px;
+    height: 26px;
+    border: solid 1px #9b9b9b;
+    margin-top: 8px;
+    color: #9b9b9b;
+    font-weight: normal;
+    font-size: 14px;
+    text-indent: 6px;
+    position:absolute;
+    left:0px;
+}
+
+#_cal_monthCalDrop
+{
+    content:url("img/tfsImg_drop.gif");
+}
+
+
+
+.dropdown input {
+    width:120px !important;
+    float:left;
+    direction:rtl;
+}
+
+
+
+.highlight
+{
+    border:1px solid red;
+}
+
+
+.lookup-arrow
+{
+    border: 0px!important; 
+    border-image: none!important; 
+    top: -20px!important; 
+    width: 10px!important; 
+    height: 22px!important; 
+    position: relative!important;  
+    background-repeat: no-repeat!important; 
+    background-color: transparent!important;
+    background-image: url("/img/droperrow.png")!important; 
+    /*background:url("img/droperrow.png");*/ 
+    float:left;
+    margin-left:5px;
+}
+
+
+
+.attachmentcontainer{
+    position:relative;
+}
+.attachmentcontainer input
+{
+    border: solid 1px #9b9b9b;
+    color: #9b9b9b;
+    font-weight: normal;
+    font-size: 14px;
+    text-indent: 6px;
+    height: 25px;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+.attachmentcontainer img{
+    right: -10px; 
+    top: -23px; 
+    vertical-align: top; 
+    position: relative; 
+    cursor: pointer;
+    background-image:url("/img/attach.png") !important;
+    background-repeat:no-repeat;
+    position:absolute;
+    right:7px;
+    top:6px;
+}
+
+select
+{
+    color:green !important;
+    width:80px !important;
+}
+
+
+
+.myAsteria
+{
+    color:#ff0000;
+}
+
+.handcursor {
+    cursor:pointer; 
+}
+
+.officialuse 
+{
+    background-color:#F5F5F5;
+    height:180px;
+    margin-bottom:20px;
+    padding:15px;
+}

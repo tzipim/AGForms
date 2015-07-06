@@ -1,0 +1,7 @@
+div.popup
+    {
+        background: white;
+        position: absolute; 
+        padding:0px;
+        z-index: 99999;
+	    	 }

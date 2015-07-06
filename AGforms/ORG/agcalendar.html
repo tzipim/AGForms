@@ -1,0 +1,91 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8" />
+    <meta content=VBScript name=VI60_defaultClientScript /><!--style-->
+    <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE9' />
+
+
+    <title>Gov Forms</title>
+    <link href="css/customoize.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/HtmlPopup_hebrew.css" rel="stylesheet" />
+    <link href="/HtmlValidatorHelper_hebrew.css" rel="stylesheet" />
+    <link href="/css/Calendar_Hebrew.css" rel="stylesheet" />
+
+    <script src="/Content/js/application.js"></script>
+    <script src="/Content/js/AGFormLoad.js"></script>
+
+</head>
+
+<body onload="window_onload()" id=mainBody tofes="" scroll="no">
+
+    <span id="GeneralAttributes" tfslanguage="hebrew" tfsappmode="debug" tfssubmitactionparam="action:postform;url:http://localhost/agformspmweb/setform.aspx;actiononreturn:function{showmessage}"
+          tfssubmitaction="submitbyhttp" tfsformid="sample1" tfsdisablebrowserfilemenu="true"
+          tfsrequirederrordisplay="border:Red" tfssecurityalert="true" tfspluginversion="1.4.0.91"
+          tfsformname="טופס דוגמה לתהליכים &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© כל הזכויות שמורות מדינת ישראל שרות הטפסים "
+          tfsversion="1.9" tfsprintsetup="CheckFormIntegrityBeforePrint:true"></span>
+    <div class=tfsOuterDiv id=OuterDiv dir=rtl>
+        <div class=tfsScrollDiv id=scrolldiv dir=ltr style="HEIGHT: 334px">
+            <div class=tfsMainDiv id=mainDiv dir=rtl align=right>
+                <div class="container clearfix">
+                    <!--header start here-->
+
+                    <div class="header">
+                        <div class="wrapper">
+                            <div class="logo"><a href=""><img src="img/logo.png" /></a></div>
+                            <div class="logo-left"><img src="img/left-img-jheader.png" /></div>
+                        </div>
+                    </div>
+
+                    <!--//header end here-->
+                    <!--content part start here-->
+                    <div class="contet-center">
+                        <div class="wrapper">
+
+                            <div class="heading1">דיווח מפונים</div>
+                            <div class="saprate-line"></div>
+                            <div class="heading2">פרטי מדווח</div>
+
+
+                            <!--<ul class="first-view">
+                                <li>
+                                    <span>נכון לתאריך ושעה</span>
+                                    <span><img src="img/caleder-view.png" /></span>
+                                    <input type="text" />
+                                </li>
+                            </ul>-->
+
+                            <ul class="first-view">
+                                <li>
+                                    <span>נכון לתאריך ושעה</span>
+                                    <select class="tfsInputCobmo" id="ddlContactBody" style="display: none;" tfsname="איש קשר בגוף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ContBody;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                </li>
+                            </ul>
+
+                            <ul class="first-view top2">
+                                <li>
+                                    <span>נכון לתאריך ושעה</span>
+                                    <input class="tfsInputText" id="tbDOB" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך לידה" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="clear"></div>
+                        <div class="footer">שירות הטפסים הלאומי</div>
+
+                    </div>
+                    <!--//contnet part end here-->
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
