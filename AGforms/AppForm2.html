@@ -51,22 +51,22 @@
                             <div class="clear"></div>
                             <ul class="first-view">
                                 <li>
-                                    <span>מספר מהדורה</span>
+                                    <span class="label">מספר מהדורה</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="tbReference" value="" tfsname="מספר מהדורה" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
                                 <li>
-                                    <span>אסמכתא</span>
+                                    <span class="label">אסמכתא</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="tbCity" value="" tfsname="אסמכתא" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
                                 <li>
-                                    <span>ישוב</span>
+                                    <span class="label">ישוב</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="tbMunBody" value="" tfsname="ישוב" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
                                 <li>
-                                    <span>גוף מוניציפלי</span>
+                                    <span class="label">גוף מוניציפלי</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="tbSubtypeRequest" value="" tfsname="גוף מוניציפלי" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
@@ -77,7 +77,7 @@
 
                             <ul class="thirdinput">
                                 <li>
-                                    <span>שם הבקשה</span>
+                                    <span class="label">שם הבקשה</span>
                                     <span class="myAsteria">*</span>
                                     <textarea id="tbApplicationName" tfsmaxlength="100" tfsname="שם הבקשה" tfsrequired="" tfsdata="" rows="4" cols="100"></textarea>
                                 </li>
@@ -86,22 +86,26 @@
 
                             <ul class="thirdinput">
                                 <li>
-                                    <span> שנת התקציב</span>
+                                    <span class="label"> שנת התקציב</span>
                                     <span class="myAsteria">*</span>
-                                    <select class="tfsInputCobmo" id="ddlBudgetYear" style="display: none;" tfsname="שנת התקציב" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=BudgetYr;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlBudgetYear" style="display: none;" tfsname="שנת התקציב" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=BudgetYr;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
                                 </li>
                                 <li>
-                                    <span> איש קשר בגוף</span>
+                                    <span class="label"> איש קשר בגוף</span>
                                     <span class="myAsteria">*</span>
-                                    <select class="tfsInputCobmo" id="ddlContactBody" style="display: none;" tfsname="איש קשר בגוף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ContBody;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlContactBody" style="display: none;" tfsname="איש קשר בגוף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ContBody;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
                                 </li>
 
                             </ul>
 
 
-                            <ul class="thirdinput">
+                            <ul class="thirdinput" style="margin-top:38px;">
                                 <li>
-                                    <span>הערות</span>
+                                    <span class="label">הערות</span>
                                     <span class="myAsteria">*</span>
                                     <textarea id="tbNotesSection1" tfsmaxlength="2000" tfsname="הערות" tfsdata="" rows="4" cols="100"></textarea>
                                 </li>
@@ -115,32 +119,34 @@
 
                             <ul class="first-view">
                                 <li>
-                                    <span>פרק משנה / עזר</span>
+                                    <span class="label">פרק משנה / עזר</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="tbChapMatter" tfsname='פרק משנה' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span>מספר עדכון תב"ר</span>
+                                    <span class="label">מספר עדכון תב"ר</span>
                                     <input class="inputtext" id="tbNoUpdate" tfsname='מספר עדכון תב"ר' tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
                                 
 
                                 <li>
-                                    <span>מספר תב"ר</span>
+                                    <span class="label">מספר תב"ר</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="tbNoOfTbr" tfsname='מספר תב"ר' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
                                 </li>
 
                                 <li>
-                                    <span>תת סוג בקשה</span>
+                                    <span class="label">תת סוג בקשה</span>
                                     <span class="myAsteria">*</span>
-                                    <select class="tfsInputCobmo" id="tblSec2_ddlSubtypeRequest" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsname="תת סוג בקשה" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=SubReq_2;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="tblSec2_ddlSubtypeRequest" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsname="תת סוג בקשה" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=SubReq_2;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
                                 </li>
                             </ul>
 
                             <ul class="thirdinput">
                                 <li>
-                                    <span>שם  פרק משנה / עזר</span>
+                                    <span class="label">שם  פרק משנה / עזר</span>
                                     <span class="myAsteria">*</span>
                                     <textarea id="tbNchnageUtils" tfsmaxlength="500" tfsname="שם  פרק משנה" tfsrequired="" tfsdata="" rows="4" cols="100"></textarea>
                                 </li>
@@ -148,7 +154,7 @@
 
                             <ul class="thirdinput">
                                 <li>
-                                    <span>תיאור פרטי העבודה</span>
+                                    <span class="label">תיאור פרטי העבודה</span>
                                     <span class="myAsteria">*</span>
                                     <textarea id="tbFirstJobDesc" tfsmaxlength="500" tfsname="תיאור פרטי העבודה" tfsrequired="" tfsdata="" rows="4" cols="100"></textarea>
                                 </li>
@@ -159,20 +165,20 @@
                             <ul class="thirdinput">
                                
                                 <li>
-                                    <span> סה"כ תקציב מאושר</span>
+                                    <span class="label"> סה"כ תקציב מאושר</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="tbApprBudget" tfsname='סה"כ תקציב מאושר' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span> חלקה</span>
+                                    <span class="label"> חלקה</span>
                                     <input class="inputtext" id="tbSmooth" tfsname='חלקה' tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span> גוש</span>
+                                    <span class="label"> גוש</span>
                                     <input class="inputtext" id="tbGhosh" tfsname="גוש" tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span> מס' תוכנית</span>
+                                    <span class="label"> מס' תוכנית</span>
                                     <input class="inputtext" id="tbNoPlans" tfsname="מס' תוכנית" tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
                             </ul>
@@ -180,12 +186,12 @@
 
                             <ul class="thirdinput">
                                 <li>
-                                    <span> אומדן עלות הפרויקט</span>
+                                    <span class="label"> אומדן עלות הפרויקט</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" style="margin-top:35px;" id="tbEstimCost" tfsname='אומדן עלות הפרויקט' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span> תאריך אישור עדכון תב"ר אחרון</span>
+                                    <span class="label"> תאריך אישור עדכון תב"ר אחרון</span>
                                     <div class="calendarcontainer" style="margin-top:49px;">
                                         <input class="calendarinput" id="tbDtLastUpdate" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname='תאריך אישור עדכון תב"ר אחרון' tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                     </div>
@@ -195,7 +201,7 @@
 
                             <ul class="thirdinput">
                                 <li>
-                                    <span>הערות</span>
+                                    <span class="label">הערות</span>
                                     <textarea id="tbNotesSection2" tfsmaxlength="2000" tfsname="הערות" tfsdata="" rows="4" cols="100"></textarea>
                                 </li>
                             </ul>
@@ -253,7 +259,9 @@
                                             <input id="tbApprBudget" class="tbrecptsum" onkeyup="SumTotalRecipts();" tfsname='סה"כ תקציב מאושר' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
                                         </td>
                                         <td>
-                                            <select class="tfsInputCobmo" id="ddlArticle" style="display: none;" tfsname="סעיף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=Recpt;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                            <div class="combocontainertable" style="width:110px;height:26px;float:right;border:0px solid red;">
+                                                <select class="tfsInputCobmo" id="ddlArticle" style="display: none;" tfsname="סעיף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=Recpt;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                            </div>
                                         </td>
                                         <td>
                                             <span id="tdNum" name="tdNum" tfsdefault=1>1</span>
@@ -306,7 +314,9 @@
                                         </td>
 
                                         <td>
-                                            <select class="tfsInputCobmo" id="SecTotRcpts_ddlArticle" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsname="סעיף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=TotRecpt;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                            <div class="combocontainertable" style="width:110px;height:26px;float:right;border:0px solid red;">
+                                                <select class="tfsInputCobmo" id="SecTotRcpts_ddlArticle" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsname="סעיף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=TotRecpt;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                            </div>
                                         </td>
                                         <td>
                                             <span id="tdNumtable2" name="tdNumtable2" tfsdefault=1>1</span>
@@ -334,27 +344,27 @@
 
                             <ul class="first-view">
                                 <li>
-                                    <span>מספר שנות הפירעון</span>
+                                    <span class="label">מספר שנות הפירעון</span>
                                     <span class="myAsteria">*</span>
-                                    <input style="margin-top:30px;" class="inputtext" id="SecAccCond_tbNoYearRepay" tfsname='מספר שנות הפירעון' tfsdatatype="numeric" tfsdata="" value="" />
+                                    <input xstyle="margin-top:30px;" class="inputtext" id="SecAccCond_tbNoYearRepay" tfsname='מספר שנות הפירעון' tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
                                 
                                 <li>
-                                    <span>סשם הבנק</span>
+                                    <span class="label">שם הבנק</span>
                                     <span class="myAsteria">*</span>
-                                    <input class="inputtext" style="margin-top:30px;" id="SecAccCond_tbBankName" tfsname='שם הבנק' tfsdata="" value="" />
+                                    <input class="inputtext" xstyle="margin-top:30px;" id="SecAccCond_tbBankName" tfsname='שם הבנק' tfsdata="" value="" />
                                 </li>
 
                                 <li>
-                                    <span>מהווה חלק מהלוואה בסך</span>
+                                    <span class="label">מהווה חלק מהלוואה בסך</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="SecAccCond_IsLoanAmt" tfsname='סה"כ תשלומיםמהווה חלק מהלוואה בסך' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
                                 </li>
 
                                 <li>
-                                    <span>סכום</span>
+                                    <span class="label">סכום</span>
                                     <span class="myAsteria">*</span>
-                                    <input class="inputtext" style="margin-top:30px;" id="SecAccCond_tbAmount" tfsname='סכום' tfsdatatype="numeric" tfsdata="" value="" />
+                                    <input class="inputtext" xstyle="margin-top:30px;" id="SecAccCond_tbAmount" tfsname='סכום' tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
 
                             </ul>
@@ -362,22 +372,22 @@
 
                             <ul class="first-view top2">
                                 <li>
-                                    <span>עמלות</span>
+                                    <span class="label">עמלות</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="SecAccCond_tbComm" tfsname='עמלות' tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span>תנאי הצמדה</span>
+                                    <span class="label">תנאי הצמדה</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="SecAccCond_tbTermsLink" tfsname='תנאי הצמדה' tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span>% ריבית</span>
+                                    <span class="label">% ריבית</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="SecAccCond_tbIntPer" tfsname='% ריבית' tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
                                 <li>
-                                    <span>מספר תשלומי קרן</span>
+                                    <span class="label">מספר תשלומי קרן</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="SecAccCond_tbNoPrinPay" tfsname='מספר תשלומי קרן' tfsdatatype="numeric" tfsdata="" value="" />
                                 </li>
@@ -385,7 +395,7 @@
 
                             <ul class="first-view">
                                 <li>
-                                    <span> מספר היתר אשראי</span>
+                                    <span class="label"> מספר היתר אשראי</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="SecAccCond_tbCrdPerNo" tfsname='מספר היתר אשראי' tfsdata="" value="" />
                                 </li>
@@ -400,7 +410,7 @@
 
                             <ul class="first-view">
                                 <li>
-                                    <span>תאריך ישיבה</span>
+                                    <span class="label">תאריך ישיבה</span>
                                     <span class="myAsteria">*</span>
                                     <div class="calendarcontainer">
                                         <input class="calendarinput" id="SecCounApp_tbDateArea" size="8" maxlength="10" value="" tfsname="תאריך ישיבה" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
@@ -408,7 +418,7 @@
                                 </li>
 
                                 <li>
-                                    <span> מספר ישיבה</span>
+                                    <span class="label"> מספר ישיבה</span>
                                     <span class="myAsteria">*</span>
                                     <input class="inputtext" id="SecCounApp_tbNumArea" tfsname='מספר ישיבה' tfsdata="" value="" />
                                 </li>
@@ -420,29 +430,29 @@
                                 
                             <ul class="first-view" style="height:100px;">
                                     <li class="attachment">
-                                        <span>אחר</span>
-                                        <div class="attachmentcontainer" style="margin-top:65px;">
+                                        <span class="label">אחר</span>
+                                        <div class="attachmentcontainer" style="margin-top:55px;">
                                             <input class="tfsInputText" id="SecAddlDocs_attOthrs" tfsname="אחר" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="20" tfsdata=tfsdata />
                                         </div>
                                     </li>
                                     <li class="attachment">
-                                        <span>תצהיר גזבר בדבר מצב קרנות בלתי מיועדות</span>
-                                        <div class="attachmentcontainer" style="margin-top:65px;">
+                                        <span class="label">תצהיר גזבר בדבר מצב קרנות בלתי מיועדות</span>
+                                        <div class="attachmentcontainer" style="margin-top:55px;">
                                             <input class="tfsInputText" id="SecAddlDocs_attTreAffd" tfsname="תצהיר גזבר בדבר מצב קרנות בלתי מיועדות" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="20" tfsdata=tfsdata />
                                         </div>
                                     </li>
                                     <li class="attachment">
-                                        <span>מסמך התחייבות/הרשאה תקציבית</span>
-                                        <div class="attachmentcontainer" style="margin-top:65px;">
+                                        <span class="label">מסמך התחייבות/הרשאה תקציבית</span>
+                                        <div class="attachmentcontainer" style="margin-top:55px;">
 
                                             <input class="tfsInputText" id="SecAddlDocs_attDocCommit" tfsname="מסמך התחייבות/הרשאה תקציבית" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="20" tfsdata=tfsdata />
                                         </div>
                                     </li>
 
                                     <li class="attachment">
-                                        <span>פרוטוקול מועצה</span>
+                                        <span class="label">פרוטוקול מועצה</span>
                                         <span class="myAsteria">*</span>
-                                        <div class="attachmentcontainer" style="margin-top:65px;">
+                                        <div class="attachmentcontainer" style="margin-top:55px;">
                                             <input class="tfsInputText" id="SecAddlDocs_attCouncilMins" tfsrequired="" tfsrequiredmark="background" tfsname="פרוטוקול מועצה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="20" tfsdata=tfsdata />
                                         </div>
                                     </li>
@@ -464,25 +474,25 @@
                             <div class="officialuse">
                                 <ul class="first-view">
                                     <li>
-                                        <span>מגיש הבקשה</span>
+                                        <span class="label">מגיש הבקשה</span>
                                         <input class="inputtext" id="tbRequested" value="" tfsname="מגיש הבקשה" tfsrequired="" tfsdata="" />
                                     </li>
                                     <li>
-                                        <span>תאריך שליחת הטופס</span>
+                                        <span class="label">תאריך שליחת הטופס</span>
                                         <span class="myAsteria">*</span>
                                         <div class="calendarcontainer">
                                             <input class="calendarinput" id="dtSubForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שליחת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                         </div>
                                     </li>
                                     <li>
-                                        <span>תאריך שמירת הטופס</span>
+                                        <span class="label">תאריך שמירת הטופס</span>
                                         <span class="myAsteria">*</span>
                                         <div class="calendarcontainer">
                                             <input class="calendarinput" id="dtMaintForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שמירת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                         </div>
                                     </li>
                                     <li>
-                                        <span>תאריך יצירת הטופס</span>
+                                        <span class="label">תאריך יצירת הטופס</span>
                                         <span class="myAsteria">*</span>
                                         <div class="calendarcontainer">
                                             <input class="calendarinput" id="tbDtCreaeForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך יצירת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
@@ -493,7 +503,7 @@
 
                                 <ul class="first-view top2">
                                     <li>
-                                        <span>בקשה נעולה</span>
+                                        <span class="label">בקשה נעולה</span>
                                         <input class="inputtext" id="tbReqLocked" value="" disabled="disabled" tfsname="בקשה נעולה " tfsrequired="" tfsdata="" />
                                     </li>
 
@@ -539,14 +549,21 @@
 
             });
 
+            //$('.combocontainertable .lookup-arrow').each(function (idx, obj) {
+            //    $(obj).attr("style", "");
+            //});
+
             $('select').each(function (idx, obj) {
                 var imgbutton = $(obj).parent().find('input[type="button"]');
                 imgbutton.css("background-image", "url(/img/droperrow.png)");
+                imgbutton.css("border", "none");
             });
+
+           
 
 
             $('.Grid .lookup-arrow').each(function (idx, obj) {
-                $(obj).attr("style", "background: url('/img/droperrow.png') no-repeat 1px 1px; border: 1px solid rgb(127, 157, 185); width: 22px; height: 22px; top: 10px !important; left:21px !important;");
+                $(obj).attr("style", "background: url('/img/droperrow.png') no-repeat 1px 1px; border: 1px solid rgb(127, 157, 185); width: 22px; height: 22px; top: 10px !important; left:-8px !important;");
             });
             var today = new Date();
             var dd = today.getDate();
