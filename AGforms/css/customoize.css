@@ -22,13 +22,13 @@ body { background:#f7f6f6; font-family:Arial, Helvetica, sans-serif; font-size:1
 .saprate-line { width:100%; height:4px; background:#014c8b; float:left; margin:30px 0 24px 0;}
 
 ul.first-view { display:block; float:right; margin-top:24px; position:relative;}
-ul.first-view li { display:block; float:left;   margin-left:20px; width:180px;}
+ul.first-view li { display:block; float:left;   margin-left:20px; width:190px;}
 ul.first-view li span { float:right; text-align:right; }
 ul.first-view li span img { position:absolute; top:36px; right:433px;}
 .top2 { margin-top:7px!important;}
 
 
-ul.first-view li input[type="text"] , .inputtext {direction:rtl; width:180px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; }
+ul.first-view li input[type="text"] , .inputtext {direction:rtl; width:190px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; }
 
 .litabdate { width:127px!important}
 .input-2 { width:127px!important;}
@@ -40,8 +40,8 @@ ul.radiotext li {  display:block; float:right; font-size:18px; color:#9b9b9b; fo
 
 
 ul.thirdinput { display:block; float:right; width:100%;}
-ul.thirdinput li { display:block; float:right; margin-left:20px; position:relative; width:180px; font-weight:normal;}
-ul.thirdinput li input[type="text"] {width:180px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; text-align:right;  }
+ul.thirdinput li { display:block; float:right; margin-left:20px; position:relative; width:190px; font-weight:normal;}
+ul.thirdinput li input[type="text"] {width:190px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; text-align:right;  }
 ul.thirdinput li span {float:right; text-align:right; }
 ul.thirdinput li span img{ margin-top: -19px;
     position: absolute;
@@ -145,7 +145,7 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
 
 .calendarinput {
     direction: rtl;
-    width: 180px;
+    width: 190px;
     height: 26px;
     border: solid 1px #9b9b9b;
     margin-top: 8px;
@@ -210,6 +210,7 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
     position:absolute;
     right:0px;
     top:0px;
+    width:190px;
 }
 .attachmentcontainer img{
     right: -10px; 
@@ -231,10 +232,14 @@ select
 }
 
 
-
+.label{
+    float:right;
+    max-width:182px;
+}
 .myAsteria
 {
     color:#ff0000;
+    float:right;
 }
 
 .handcursor {
@@ -248,3 +253,41 @@ select
     margin-bottom:20px;
     padding:15px;
 }
+
+.combocontainer
+{
+    position:relative !important;
+}
+
+.combocontainer input
+{
+    position:absolute !important;
+    right:0px;
+    top:0px;
+}
+
+.combocontainer input[type="button"]
+{
+    position:absolute !important;
+    right:171px;
+    top:19px !important;
+}
+
+
+.combocontainertable
+{
+    position:relative !important;
+}
+.combocontainertable input
+{
+    position:absolute !important;
+    right:0px;
+    top:0px;
+}
+.combocontainertable input[type="button"]
+{
+    position:absolute !important;
+    right:96px;
+    top:9px !important;
+}
+
