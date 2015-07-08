@@ -1,12 +1,11 @@
 ﻿
 
-* {
+/** {
     font-family: Arial;
     font-size: 12px;
 }
 
 
-/*  built-in style */
 .btnMouseOn {
     BORDER: white 2px outset;
 }
@@ -14,9 +13,9 @@
 .btnRegular {
     BORDER: gray thin;
     MARGIN: 2px;
-}
+}*/
 
-.tfsCalendar {
+/*.tfsCalendar {
     DISPLAY: inline;
 }
 
@@ -42,22 +41,22 @@
 
 .tfsInputButtonLock {
     DISPLAY: none;
-}
+}*/
 
-.tfsToolBar {
+/*.tfsToolBar {
     BORDER: thin outset;
     PADDING-LEFT: 2px;
     PADDING-TOP: 2px;
     MARGIN-BOTTOM: 2px;
     BACKGROUND-COLOR: activeborder;
-}
+}*/
 
-.tfsMainDiv {
+/*.tfsMainDiv {
     BORDER-WIDTH: 1px;
     OVERFLOW: hidden;
     WIDTH: 17cm;
     BACKGROUND-COLOR: white;
-}
+}*/
 
 .tfsScrollDiv {
     OVERFLOW: auto;
@@ -65,12 +64,12 @@
     BACKGROUND-COLOR: white;
 }
 
-.tfsOuterDiv {
+/*.tfsOuterDiv {
     BACKGROUND-COLOR: activeborder;
     TEXT-ALIGN: center;
-}
+}*/
 
-.tfsInputText {
+/*.tfsInputText {
 }
 
 .tfsInputRadio {
@@ -101,7 +100,6 @@
     display: none;
 }
 
-/* General style */
 .myAsteria {
     color: #FF0000;
 }
@@ -205,7 +203,6 @@ h1 span, h2 span {
     font-size: 120% !important;
 }
 
-/*** Background Design ***/
 .designBox, .disabled {
     width: 100%;
     margin-bottom: 10px !important;
@@ -249,9 +246,11 @@ h1 span, h2 span {
 
         .disabled td input, .disabled td textarea, .disabled td select {
             border: 1px solid #C5C6CB;
-        }
+        }*/
 
-input.tfsInputradio {
+
+
+/*input.tfsInputradio {
     border: 0px !important;
 }
 
@@ -262,7 +261,6 @@ input.tfsInputradio {
     direction: ltr;
 }
 
-/* Corners & Shadows */
 .topLft {
     height: 10px;
     font-size: 3px !important;
@@ -298,7 +296,6 @@ input.tfsInputradio {
     font-size: 3px !important;
 }
 
-/* Stripes Table */
 .stripesTbl {
     width: 100%;
     margin: 8px 0px 3px 0px;
@@ -321,7 +318,6 @@ input.tfsInputradio {
     }
 
 
-/* Transparent Table */
 .noStripesTbl td {
     font-weight: normal !important;
     font-size: 13px;
@@ -331,7 +327,6 @@ input.tfsInputradio {
 
 
 
-/*APP STYLES*/
 .fright{
     float:right;
 }
@@ -535,26 +530,10 @@ input
 {
     padding:5px;
 }
-/*.divtableheader div
-{
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #fff7d1;
-    border-color: #cccdd1;
-    border-image: none;
-    border-style: solid;
-    border-width: 0 0 1px 1px;
-    text-align: center;
-    height:15px;
-    padding:3px 6px;
-    margin-top:10px;
-}*/
 
 #agat_popup
 {
     margin-left:10px !important;
     direction:rtl;
     border:1px solid red;
-}
+}*/

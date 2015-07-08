@@ -28,7 +28,7 @@ ul.first-view li span img { position:absolute; top:36px; right:433px;}
 .top2 { margin-top:7px!important;}
 
 
-ul.first-view li input[type="text"] , .inputtext {direction:rtl; width:190px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; }
+ul.first-view li input[type="text"] , .inputtext {text-align:right; width:190px;  height:26px; border:solid 1px #9b9b9b;  margin-top:8px; color:#9b9b9b; font-weight:normal; font-size:14px; text-indent:6px; }
 
 .litabdate { width:127px!important}
 .input-2 { width:127px!important;}
@@ -77,7 +77,7 @@ ul.thirdinput li span img{ margin-top: -19px;
     .Grid .pgr a:hover { color: #000; text-decoration: none; height:30px;cursor:pointer; }
 
 
-.Grid input  { width:110px; height:25px; border:solid 1px #999; color:#666666; font-size:14px; text-align:right; padding-right:5px; float:right;direction:rtl;}
+.Grid input  { width:110px; height:25px; border:solid 1px #999; color:#666666; font-size:14px; text-align:right; padding-right:5px; float:right;}
 	
 .Grid span img { padding-top:7px; float:left; padding-right:7px; float:right;}
 .Grid span img.drop {  position: absolute;
@@ -289,5 +289,10 @@ select
     position:absolute !important;
     right:96px;
     top:9px !important;
+    text-align:right;
 }
 
+.tfsScrollDiv {
+    OVERFLOW: auto;
+  
+}
