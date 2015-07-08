@@ -1,6 +1,6 @@
 ﻿
 
-/** {
+* {
     font-family: Arial;
     font-size: 12px;
 }
@@ -13,9 +13,9 @@
 .btnRegular {
     BORDER: gray thin;
     MARGIN: 2px;
-}*/
+}
 
-/*.tfsCalendar {
+.tfsCalendar {
     DISPLAY: inline;
 }
 
@@ -41,22 +41,22 @@
 
 .tfsInputButtonLock {
     DISPLAY: none;
-}*/
+}
 
-/*.tfsToolBar {
+.tfsToolBar {
     BORDER: thin outset;
     PADDING-LEFT: 2px;
     PADDING-TOP: 2px;
     MARGIN-BOTTOM: 2px;
     BACKGROUND-COLOR: activeborder;
-}*/
+}
 
-/*.tfsMainDiv {
+.tfsMainDiv {
     BORDER-WIDTH: 1px;
     OVERFLOW: hidden;
     WIDTH: 17cm;
     BACKGROUND-COLOR: white;
-}*/
+}
 
 .tfsScrollDiv {
     OVERFLOW: auto;
@@ -64,12 +64,12 @@
     BACKGROUND-COLOR: white;
 }
 
-/*.tfsOuterDiv {
+.tfsOuterDiv {
     BACKGROUND-COLOR: activeborder;
     TEXT-ALIGN: center;
-}*/
+}
 
-/*.tfsInputText {
+.tfsInputText {
 }
 
 .tfsInputRadio {
@@ -246,11 +246,11 @@ h1 span, h2 span {
 
         .disabled td input, .disabled td textarea, .disabled td select {
             border: 1px solid #C5C6CB;
-        }*/
+        }
 
 
 
-/*input.tfsInputradio {
+input.tfsInputradio {
     border: 0px !important;
 }
 
@@ -536,4 +536,4 @@ input
     margin-left:10px !important;
     direction:rtl;
     border:1px solid red;
-}*/
+}
