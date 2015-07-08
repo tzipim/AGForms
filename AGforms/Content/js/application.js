@@ -86,8 +86,11 @@ function FindIndex(obj) {
 function DelRow(e, cellNumId, tblId) {
 
     var lenElements = document.getElementsByName(cellNumId);
+    //console.log(lenElements.length);
+
     if (lenElements.length == 1) {
-        tfsAlert("חייבת להיות לפחות רשומה אחת בטבלה", "טבלאות", 64);
+        //tfsAlert("חייבת להיות לפחות רשומה אחת בטבלה", "טבלאות", 64);
+        //tfsAlert("atleast one row", "טבלאות", 64);
         return;
     }
 
