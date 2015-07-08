@@ -1,0 +1,156 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE9' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content=VBScript name=VI60_defaultClientScript /><!--style-->
+
+    <title>Gov Forms</title>
+ 
+    <link href="/css/HtmlPopup_hebrew.css" rel="stylesheet" />
+    <link href="/css/Style.css" rel="stylesheet" />
+    <link href="/css/HtmlValidatorHelper_hebrew.css" rel="stylesheet" />
+    <link href="/css/Calendar_Hebrew.css" rel="stylesheet" />
+
+
+</head>
+<body onload="window_onload()" id="mainBody" tofes="" style="overflow:scroll;">
+    <span id="GeneralAttributes" tfslanguage="hebrew" tfsappmode="debug" tfssubmitactionparam="action:postform;url:http://localhost/agformspmweb/setform.aspx;actiononreturn:function{showmessage}"
+          tfssubmitaction="submitbyhttp" tfsformid="form1" tfsdisablebrowserfilemenu="true"
+          tfsrequirederrordisplay="border:Red" tfssecurityalert="true" tfspluginversion="1.4.0.91"
+          tfsformname="טופס דוגמה לתהליכים &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© כל הזכויות שמורות מדינת ישראל שרות הטפסים "
+          tfsversion="1.9" tfsprintsetup="CheckFormIntegrityBeforePrint:true"></span>
+
+    <div class=tfsOuterDiv id=OuterDiv>
+        <div class=tfsScrollDiv id=scrolldiv>
+            <div class=tfsMainDiv id=mainDiv>
+
+                <div class="container clearfix">
+                    <!--header start here-->
+                    <div class="header">
+                        <div class="wrapper">
+                            <div class="logo"><a href=""><img src="img/logo.png" /></a></div>
+                            <div class="logo-left"><img src="img/left-img-jheader.png" /></div>
+                        </div>
+                    </div>
+                    <!--//header end here-->
+                    <!--content part start here-->
+                    <div class="contet-center">
+                        <div class="wrapper">
+                            <div class="heading1">בקשת מינוי דירקטוריון בתאגיד</div>
+
+                            <div class="saprate-line"></div>
+                            <div class="heading2">פרטי הטופס</div>
+                            <div class="clear"></div>
+                            <!--calendar-->
+                            <ul class="first-view top2">
+                                <li>
+                                    <span>נכון לתאריך ושעה</span>
+                                    <input class="tfsInputText" id="tbDOB" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך לידה" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                </li>
+                            </ul>
+
+                                    <ul class="first-view top2">
+                                <li>
+                            <!--upload file-->
+                            <div class="attachmentcontainer" style="margin-top:55px;">
+                                <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch4" tfsname="אישור רישום התאגיד ברשם המתאים" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                            </div>
+                            <!--combo-->
+                            <ul class="first-view top2">
+                                <li>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlBudgetYear" style="display: none;" tfsname="שנת התקציב" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=BudgetYr;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                    </li>
+                                </ul>
+
+                                    <div class="submit2">
+                                        <input class="tfsInputText fleft submit2" id="btnSubmit" type="button" value="שלח" tfsaction="submit" />
+                                    </div>
+
+                                    <div class="saprate_3"></div>
+                                    <div class="heading_3">לשימוש משרדי</div>
+                                    <div class="clear"></div>
+                                    <div class="officialuse">
+
+                                    </div>
+
+                                    <div style="margin-top:200px;">
+                                        SPACE
+                                    </div>
+
+                                </li>
+
+
+
+
+
+                            </ul>
+                             <div class="saprate-line"></div>
+                            <div class="heading2">פרטי הטופס</div>
+                            <div class="clear"></div>
+                            <!--calendar-->
+                            <ul class="thirdinput">
+                                <li>
+                                    <span>נכון לתאריך ושעה</span>
+                                    <input class="tfsInputText" id="tbDOB1" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך לידה" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                        <div class="clear"></div>
+                        <div class="footer">שירות הטפסים הלאומי</div>
+                    </div>
+                    <!--//contnet part end here-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Content/js/application.js"></script>
+    <script src="/Content/js/AGFormLoad.js"></script>
+    <!--<script src="/js/jquery-2.0.2.min.js"></script>-->
+    <script type="text/javascript">
+
+
+        window.onload = function () {
+
+            $('.tfsCalendar').each(function (idx, obj) {
+                $(obj).css("background-image", "url(/img/caleder-view.png)");
+                $(obj).attr('background');
+
+                //$(obj).bind('click', function () {
+
+                //    //console.log('cal');
+                //});
+            });
+
+            $('.attachmentcontainer').find('img').each(function (idx, obj) {
+                $(obj).attr("src", "/img/attach.png");
+
+            });
+
+            $('select').each(function (idx, obj) {
+                var imgbutton = $(obj).parent().find('input[type="button"]');
+                imgbutton.css("background-image", "url(/img/droperrow.png)");
+                imgbutton.css("border", "none");
+            });
+
+
+            $('.Grid .lookup-arrow').each(function (idx, obj) {
+                $(obj).attr("style", "background: url('/img/droperrow.png') no-repeat 1px 1px; border: 1px solid rgb(127, 157, 185); width: 22px; height: 22px; top: 10px !important; left:21px !important;");
+            });
+           
+            $('.tfsCalendar').each(function (idx, obj) {
+                $(obj).val('');
+            });
+        }
+
+    </script>
+
+</body>
+</html>
