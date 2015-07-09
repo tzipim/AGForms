@@ -223,15 +223,11 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
     background-image:url("/img/attach.png") !important;
     background-repeat:no-repeat;
     position:absolute;
-    left:7px;
+    left:0px;
     top:6px;
 }
 
-select
-{
-    color:green !important;
-    width:80px !important;
-}
+
 
 
 .label{
@@ -298,3 +294,9 @@ select
     OVERFLOW: auto;
   
 }
+
+/*select
+{
+    color:green !important;
+    width:80px !important;
+}*/
