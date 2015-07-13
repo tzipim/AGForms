@@ -229,5 +229,146 @@ function SumTotalPayments() {
 
 
 
+/*Start section form 4.1*/
+function AddTaxChange(btnAdd, cellNum) {
+    AddRow(btnAdd, cellNum);
+    SumTotalTaxChange();
+}
+
+function DeleteTaxChange(delImage, e, cellNumId, tblId) {
+    DelRow(e, cellNumId, tblId);
+
+    //remove ELEMENT from DOM
+    var noofrows = $('.taxchange #tdNumTaxChange').length;
+    if (noofrows > 1) {
+        var delRow = $(delImage).closest('tr');
+        $(delRow).remove();
+    }
+    SumTotalTaxChange();
+}
+
+function SumTotalTaxChange() {
+
+    var total = 0;
+
+    $('.taxchange .localtaxregula').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spnlocaltaxregula').text(total);
+
+    total = 0;
+    $('.taxchange .cuuryrreqtar').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spncuuryrreqtar').text(total);
+
+    total = 0;
+    $('.taxchange .cuuryrreqpay').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spncuuryrreqpay').text(total);
+
+    total = 0;
+    $('.taxchange .incdecdesper').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spnincdecdesper').text(total);
+
+    total = 0;
+    $('.taxchange .totarsqmet').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spntotarsqmet').text(total);
+
+
+    total = 0;
+    $('.taxchange .totinccurrtaxwarr').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spntotinccurrtaxwarr').text(total);
+
+
+    total = 0;
+    $('.taxchange .totincordreq').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spntotincordreq').text(total);
+
+    total = 0;
+    $('.taxchange .totaddi').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spntotaddi').text(total);
+
+    total = 0;
+    $('.taxchange .numtaxpay').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spnnumtaxpay').text(total);
+
+    total = 0;
+    $('.taxchange .sincerate').each(function (i, obj) {
+        //check if a number
+        var tbValue = $.trim($(obj).val());
+
+        if ($.isNumeric(tbValue)) {
+            total += parseFloat(tbValue);
+        }
+    });
+    $('.taxchange #spnsincerate').text(total);
+
+
+}
+
+/*End section form 4.1*/
+
+
+
+
 //----- End User Functions -----------------------------------------------
 
