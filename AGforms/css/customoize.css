@@ -300,3 +300,15 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
     color:green !important;
     width:80px !important;
 }*/
+
+.largetable thead th
+{
+    min-width:125px;
+    padding:0px 2px 0px 2px;
+}
+
+.largetable thead th span
+{
+    float:left;
+}
+
