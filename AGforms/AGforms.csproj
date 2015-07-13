@@ -59,12 +59,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="4.5.html" />
+    <Content Include="4.1.html" />
+    <Content Include="Template.html" />
     <Content Include="4.6.html" />
     <Content Include="AGHELP\form1.html" />
     <Content Include="AGHELP\form2.html" />
     <Content Include="Content\js\AGFormLoad.js" />
     <Content Include="Content\js\application.js" />
-    <Content Include="Content\js\JavaScript1.js" />
     <Content Include="Content\js\jquery-2.0.2.min.js" />
     <Content Include="css\Calendar_Hebrew.css" />
     <Content Include="css\customoize.css" />
@@ -79,15 +80,9 @@
     <Content Include="img\droperrow.png" />
     <Content Include="img\left-img-jheader.png" />
     <Content Include="img\logo.png" />
-    <Content Include="js\AGFormLoad.js" />
-    <Content Include="js\application.js" />
-    <Content Include="js\JavaScript1.js" />
-    <Content Include="js\jquery-2.0.2.min.js" />
     <Content Include="obj\Debug\AGforms.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\AGforms.dll" />
     <Content Include="obj\Debug\AGforms.pdb" />
-    <Content Include="ORG\AppForm1.html" />
-    <Content Include="ORG\AppForm2.html" />
     <Content Include="ORG\css\customoize.css" />
     <Content Include="ORG\css\normalize.css" />
     <Content Include="ORG\img\attach.png" />
@@ -97,9 +92,7 @@
     <Content Include="ORG\img\droperrow.png" />
     <Content Include="ORG\img\left-img-jheader.png" />
     <Content Include="ORG\img\logo.png" />
-    <Content Include="ORG\agcalendar.html" />
     <Content Include="ORG\index.html" />
-    <Content Include="test5.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
