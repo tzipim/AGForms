@@ -229,7 +229,7 @@ function SumTotalPayments() {
 
 
 
-/*Start section form 4.1*/
+/*Start section form 4.10*/
 function AddTaxChange(btnAdd, cellNum) {
     AddRow(btnAdd, cellNum);
     SumTotalTaxChange();
@@ -365,9 +365,21 @@ function SumTotalTaxChange() {
 
 }
 
-/*End section form 4.1*/
+/*End section form 4.10*/
 
 
+/* START section form 4.18*/
+
+function AddEmpUnderPersonalCont(btnAdd, cellNum) {
+    AddRow(btnAdd, cellNum);
+}
+
+function DeleteEmpUnderPersonalCont(delImage, e, cellNumId, tblId) {
+    DelRow(e, cellNumId, tblId);
+}
+
+
+/* END section form 4.18*/
 
 
 //----- End User Functions -----------------------------------------------
