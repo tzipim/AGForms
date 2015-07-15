@@ -1,0 +1,379 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE9' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content=VBScript name=VI60_defaultClientScript /><!--style-->
+    <title>App Form  - 4.9</title>
+
+    <link href="/css/customoize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/HtmlPopup_hebrew.css" rel="stylesheet" />
+    <link href="/css/HtmlValidatorHelper_hebrew.css" rel="stylesheet" />
+    <link href="/css/Calendar_Hebrew.css" rel="stylesheet" />
+
+</head>
+<body onload="window_onload()" id="mainBody" tofes="">
+    <span id="GeneralAttributes" tfslanguage="hebrew" tfsappmode="debug" tfssubmitactionparam="action:postform;url:http://localhost/agformspmweb/setform.aspx;actiononreturn:function{showmessage}"
+          tfssubmitaction="submitbyhttp" tfsformid="form1" tfsdisablebrowserfilemenu="true"
+          tfsrequirederrordisplay="border:Red" tfssecurityalert="true" tfspluginversion="1.4.0.91"
+          tfsformname="טופס דוגמה לתהליכים &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© כל הזכויות שמורות מדינת ישראל שרות הטפסים "
+          tfsversion="1.9" tfsprintsetup="CheckFormIntegrityBeforePrint:true"></span>
+
+    <div class=tfsOuterDiv id=OuterDiv>
+        <div class=tfsScrollDiv id=scrolldiv>
+            <div class=tfsMainDiv id=mainDiv>
+
+                <div class="container clearfix">
+                    <!--header start here-->
+                    <div class="header">
+                        <div class="wrapper">
+                            <div class="logo"><a href=""><img src="img/logo.png" /></a></div>
+                            <div class="logo-left"><img src="img/left-img-jheader.png" /></div>
+                        </div>
+                    </div>
+                    <!--//header end here-->
+                    <!--content part start here-->
+                    <div class="contet-center">
+                        <div class="wrapper">
+                            <div class="heading1">בקשה לאישור תאגיד</div>
+
+                            <!--START HEADER SECTION-->
+                            <div class="saprate-line"></div>
+                            <div class="heading2">פרטי הטופס</div>
+                            <div class="clear"></div>
+                            <ul class="first-view">
+                                <li>
+                                    <span class="label">מספר מהדורה</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbReference" value="" tfsname="מספר מהדורה" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                                <li>
+                                    <span class="label">אסמכתא</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbCity" value="" tfsname="אסמכתא" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                                <li>
+                                    <span class="label">ישוב</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbMunBody" value="" tfsname="ישוב" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                                <li>
+                                    <span class="label">גוף מוניציפלי</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbSubtypeRequest" value="" tfsname="גוף מוניציפלי" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="label">שם הבקשה</span>
+                                    <span class="myAsteria">*</span>
+                                    <textarea id="tbApplicationName" tfsmaxlength="100" tfsname="שם הבקשה" tfsrequired="" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="label"> שנת התקציב</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlBudgetYear" tfsrequired="" style="display: none;" tfsname="שנת התקציב" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=BudgetYr;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="label"> איש קשר בגוף</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlContactBody" tfsrequired="" style="display:none;" tfsname="איש קשר בגוף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ContBody;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput" style="margin-top:38px;">
+                                <li>
+                                    <span class="label">הערות</span>
+                                    <span class="myAsteria">*</span>
+                                    <textarea id="tbNotesSection1" tfsrequired="" tfsmaxlength="2000" tfsname="הערות" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <!--END HEADER SECTION-->
+
+
+                            <!--START Info Request SECTION-->
+                            <div class="saprate-line"></div>
+                            <div class="heading2">פרטי הבקשה</div>
+                            <div class="clear"></div>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="label">מספר תאגיד</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbNoCorporate" tfsname='מספר תאגיד' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                </li>
+                                <li>
+                                    <span class="label">שם תאגיד</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbCorporateName" tfsname='שם תאגיד' tfsmaxlength="100" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                </li>
+                                <li>
+                                    <span class="label"> תת סוג הבקשה</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlSubTypeRq" tfsname="תת סוג הבקשה" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=RepForm;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="label">תיאור השינוי</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbDescChange" tfsname='תיאור השינוי' tfsmaxlength="100" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                </li>
+                            </ul>
+
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="label"> סיווג</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="combocontainer" style="margin-top:45px;">
+                                        <select class="tfsInputCobmo" id="ddlClassification" tfsname="סיווג" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=RepForm;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                                <li style="width:522px;">
+                                    <span class="label" style="max-width:500px;"> רשימת הבעלים של התאגיד כפי שהיא מופיעה במערכת מיפוי גופי שלטון מקומי של משרד הפנים באינטרנט ליום הגשת הבקשה</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="combocontainer" style="margin-top:45px;">
+                                        <select class="tfsInputCobmo" id="ddlListOfOwnrs" tfsname="רשימת הבעלים של התאגיד כפי שהיא מופיעה במערכת מיפוי גופי שלטון מקומי של משרד הפנים באינטרנט ליום הגשת הבקשה" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=RepForm;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="thirdinput" id="ulSecNonExstCorp" style="display:none;margin-top:30px;">
+                                <li>
+                                    <span class="label"> סוג גוף מחזיק</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlBodyTypeHolder" tfsname="סוג גוף מחזיק" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=RepForm;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="label">שם </span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbName" tfsname='שם' tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                </li>
+                                <li>
+                                    <span class="label">אחוז אחזקה</span>
+                                    <span class="myAsteria">*</span>
+                                    <input class="inputtext" id="tbName" tfsname='אחוז אחזקה' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                </li>
+                            </ul>
+
+                            <!--END Info Rrequest SECTION-->
+
+                            <!--START section 3 - Additonal Docs SECTION-->
+                            <div class="saprate_3"></div>
+                            <div class="heading_3">נספחים מצורפים </div>
+                            <div class="clear"></div>
+                           
+                            <ul class="thirdinput">
+                                <li class="attachment">
+                                    <span class="label">מכתב פניה רישמי של ראש הרשות המקומית</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" tfsrequired="" id="attchLettToHeadAuthor" tfsname="מכתב פניה רישמי של ראש הרשות המקומית" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+
+                                <li class="attachment">
+                                    <span class="label">חוות דעת מוקדמת של מנכ"ל הרשות המקומית בדבר הקמת החברה</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" tfsrequired="" id="attchEarlRevwCEO" tfsname="חוות דעת מוקדמת של מנכ" ל=ל הרשות=הרשות המקומית=המקומית בדבר=בדבר הקמת=הקמת החברה"=החברה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+
+                                <li class="attachment">
+                                    <span class="label">חוות דעת מוקדמת של גזבר הרשות המקומית בדבר הקמת החברה</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" tfsrequired="" id="attchEarlRvwsTreaLoclAuth" tfsname="חוות דעת מוקדמת של גזבר הרשות המקומית בדבר הקמת החברה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+
+                                <li class="attachment">
+                                    <span class="label">חוות דעת היועץ המשפטי של הרשות המקומית</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" tfsrequired="" id="attchAttoropiLoclAuth" tfsname="חוות דעת היועץ המשפטי של הרשות המקומית" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment">
+                                    <span class="label">החלטת מועצת הרשות המקומית</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" tfsrequired="" id="attchLoclAuthCounDesc" tfsname="החלטת מועצת הרשות המקומית" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                                <li class="attachment">
+                                    <span class="label">תוכנית אסטרטגית</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" id="attchStratPlan" tfsname="תוכנית אסטרטגית" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                                <li class="attachment">
+                                    <span class="label">2 דוחות כספיים מבוקרים של 2 שנות הכספים הקודמות למועד הגשת הבקשה</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" id="attch2AudtFin" tfsname="2 דוחות כספיים מבוקרים של 2 שנות הכספים הקודמות למועד הגשת הבקשה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                                <li class="attachment">
+                                    <span class="label">מידע בדבר תאגידים עירוניים קיימים ותחומי פעילותם</span>
+                                    <div class="attachmentcontainer" style="margin-top:70px;">
+                                        <input class="tfsInputText" id="attchInfoExstMuni" tfsname="מידע בדבר תאגידים עירוניים קיימים ותחומי פעילותם" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment">
+                                    <span class="label">תקנון החברה</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="attachmentcontainer" style="margin-top:25px;">
+                                        <input class="tfsInputText" tfsrequired="" id="attchArticOfAsso" tfsname="תקנון החברה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                                <li class="attachment">
+                                    <span class="label">מנכ"ל הרשות</span>
+                                    <span class="myAsteria">*</span>
+                                    <div class="attachmentcontainer" style="margin-top:25px;">
+                                        <input class="tfsInputText" tfsrequired="" id="attchGenDirctor" tfsname="מנכ" ל=ל הרשות"=הרשות" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!--END section 3 - Additonal Docs SECTION-->
+
+                        
+
+                            <!--START FORM SUBMIT BUTTON-->
+                            <div class="clear"></div>
+                            <div class="submit2">
+                                <input class="tfsInputText fleft submit2" id="btnSubmit" type="button" value="שלח" tfsaction="submit" />
+                            </div>
+                            <!--END FORM SUBMIT BUTTON-->
+                            <!--START FOOTER OFFICIAL USAGE-->
+                            <div class="saprate_3"></div>
+                            <div class="heading_3">לשימוש משרדי</div>
+                            <div class="clear"></div>
+                            <div class="officialuse">
+                                <ul class="first-view">
+                                    <li>
+                                        <span class="label">מגיש הבקשה</span>
+                                        <input class="inputtext" id="tbRequested" value="" tfsname="מגיש הבקשה" tfsdata="" />
+                                    </li>
+                                    <li>
+                                        <span class="label">תאריך שליחת הטופס</span>
+                                        <span class="myAsteria">*</span>
+                                        <div class="calendarcontainer">
+                                            <input class="calendarinput" id="dtSubForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שליחת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="label">תאריך שמירת הטופס</span>
+                                        <span class="myAsteria">*</span>
+                                        <div class="calendarcontainer">
+                                            <input class="calendarinput" id="dtMaintForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שמירת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="label">תאריך יצירת הטופס</span>
+                                        <span class="myAsteria">*</span>
+                                        <div class="calendarcontainer">
+                                            <input class="calendarinput" id="tbDtCreaeForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך יצירת הטופס" tfsdata="" tfsrequired="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="first-view top2">
+                                    <li>
+                                        <span class="label">בקשה נעולה</span>
+                                        <input class="inputtext" id="tbReqLocked" value="" disabled="disabled" tfsname="בקשה נעולה " tfsdata="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--END FOOTER OFFICIAL USAGE-->
+                            
+                        </div>
+                        <div class="clear"></div>
+                        <div class="footer">שירות הטפסים הלאומי</div>
+                    </div>
+                    <!--//contnet part end here-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Content/js/application.js"></script>
+    <script src="/Content/js/AGFormLoad.js"></script>
+    <!--<script src="/js/jquery-2.0.2.min.js"></script>-->
+    <script type="text/javascript">
+
+
+        window.onload = function () {
+
+            $('.tfsCalendar').each(function (idx, obj) {
+                $(obj).css("background-image", "url(/img/caleder-view.png)");
+                $(obj).attr('background');
+
+                //$(obj).bind('click', function () {
+
+                //    //console.log('cal');
+                //});
+            });
+
+            $('.attachmentcontainer').find('img').each(function (idx, obj) {
+                $(obj).attr("src", "/img/attach.png");
+
+            });
+
+            $('select').each(function (idx, obj) {
+                var imgbutton = $(obj).parent().find('input[type="button"]');
+                imgbutton.css("background-image", "url(/img/droperrow.png)");
+                imgbutton.css("border", "none");
+            });
+
+
+            $('.Grid .lookup-arrow').each(function (idx, obj) {
+                $(obj).attr("style", "background: url('/img/droperrow.png') no-repeat 1px 1px; border: 1px solid rgb(127, 157, 185); width: 22px; height: 22px; top: 10px !important; left:-7px !important;");
+            });
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+
+            var yyyy = today.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+            var today = dd + '/' + mm + '/' + yyyy;
+            document.getElementById('tbDtCreaeForm').value = today;
+
+            $('.tfsCalendar').each(function (idx, obj) {
+                $(obj).val('');
+            });
+
+
+            //Validate section  - to be diaplyed
+            if ($.trim($('#tbSubtypeRequest')) == 'יסוד תאגיד שאינו קיים' || $.trim($('#tbSubtypeRequest') == ''))
+            {
+                $('#ulSecNonExstCorp').show();
+            }
+            else
+            {
+                $('#ulSecNonExstCorp').hide();
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
