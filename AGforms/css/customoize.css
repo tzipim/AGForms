@@ -198,6 +198,8 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
 
 .attachmentcontainer{
     position:relative;
+    width: 190px;
+    float:right;
 }
 .attachmentcontainer input
 {
@@ -340,7 +342,17 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
 
 .twocolumn .label
 {
-    max-width:413px !important;
+    max-width:405px !important;
+}
+
+.threecolumn
+{
+    width:285px !important;
+}
+
+.threecolumn .label
+{
+    max-width:275px !important;
 }
 
 .fourcolumn
