@@ -109,7 +109,7 @@
                                         <input class="calendarinput" id="XXXX" size="8" maxlength="10" value="" tfsrequiredmark="background"
                                                tfsname="תאריך אישור הצו על ידי המועצה" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                     </div>
-                                   
+
                                 </li>
                                 <li>
                                     <span class="label">הטלה ראשונה</span>
@@ -119,9 +119,10 @@
                                         <select class="tfsInputCobmo" id="XXXX" style="display: none;" tfsname="הטלה ראשונה" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=AuctionType;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
-                              
+
                                 <li>
-                                    <span class="label">תאריך אישור הצ על ידי הוועד והמקומי
+                                    <span class="label">
+                                        תאריך אישור הצ על ידי הוועד והמקומי
                                     </span>
                                     <span class="myAsteria">*</span>
                                     <div class="calendarcontainer" style="margin-top:43px;">
@@ -130,8 +131,6 @@
                                 </li>
                             </ul>
                             <!--END Information Request SECTION-->
-
-
                             <!--START Tax Change SECTION-->
                             <div class="saprate_3"></div>
                             <div class="heading_3">סעיפי צו המיסים לשינוי</div>
@@ -348,7 +347,7 @@
                                     </tr>
                                 </table>
                             </div>
-                           
+
 
                             <div class="">
                                 <input type="button" id="tfsAddRowBtn_tblTaxChange" tfsvisible="false" tfsaction="addTableRow" />
@@ -356,8 +355,6 @@
                             </div>
 
                             <!--END Tax Change SECTION-->
-
-
                             <!--START CERTIFICATES Section-->
                             <div class="saprate_2"></div>
                             <div class="clear"></div>
@@ -397,99 +394,108 @@
                                                 tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=AttorApprAuth;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
-                             
+
                             </ul>
                             <!--END CERTIFICATES Section-->
-
-
                             <!--START Upload Files SECTION-->
 
                             <div class="saprate_3"></div>
                             <div class="heading_3">נספחים</div>
                             <div class="clear"></div>
-                            <ul class="first-view" style="height:100px;">
-                                <li class="attachment">
+                           
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">צו המיסים שנה נוכחית כולל השינויים המבוקשים בבקשה זו מודגשים בצבע שונה</span>
                                     <span class="myAsteria">*</span>
-                                    <div class="attachmentcontainer" style="margin-top:92px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch4" tfsname="צו המיסים שנה נוכחית כולל השינויים המבוקשים בבקשה זו מודגשים בצבע שונה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                                <li class="attachment">
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">צו המיסים שנה נוכחית ללא השינויים המבוקשים</span>
                                     <span class="myAsteria">*</span>
-                                    <div class="attachmentcontainer" style="margin-top:92px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch3" tfsname="צו המיסים שנה נוכחית ללא השינויים המבוקשים" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                                <li class="attachment">
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">פרוטוקול הישיבה של מועצת הרשות בה אושר צו המסים שנה נוכחית</span>
-                                    <div class="attachmentcontainer" style="margin-top:92px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" id="attch2" tfsname="פרוטוקול הישיבה של מועצת הרשות בה אושר צו המסים שנה נוכחית" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                                <li class="attachment">
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">הסבר מפורט מדוע מבוקש האישור החריג בצו המסים</span>
                                     <span class="myAsteria">*</span>
-                                    <div class="attachmentcontainer" style="margin-top:92px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch1" tfsname="הסבר מפורט מדוע מבוקש האישור החריג בצו המסים" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                               
                             </ul>
                             <ul class="thirdinput">
-                                <li class="attachment">
+                                <li class="attachment onecolumn">
                                     <span class="label">צו המיסים שנה אחורה</span>
                                     <span class="myAsteria">*</span>
-                                    <div class="attachmentcontainer" style="margin-top:72px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch5" tfsname="צו המיסים שנה אחורה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                                <li class="attachment">
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">צו המיסים שנתיים אחורה</span>
                                     <span class="myAsteria">*</span>
-                                    <div class="attachmentcontainer" style="margin-top:72px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch6" tfsname="צו המיסים שנתיים אחורה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                                <li class="attachment">
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">אישור היועץ משפטי לרשות</span>
-                                    <div class="attachmentcontainer" style="margin-top:72px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" id="attch7" tfsname="אישור היועץ משפטי לרשות" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                                <li class="attachment">
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">העתק נוסח ההודעה שנשלחה למחזיק טרם הגשת הבקשה למשרד הפנים</span>
-                                    <div class="attachmentcontainer" style="margin-top:72px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" id="attch8" tfsname="העתק נוסח ההודעה שנשלחה למחזיק טרם הגשת הבקשה למשרד הפנים" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
                             </ul>
                             <ul class="thirdinput">
-                                <li class="attachment">
+                                <li class="attachment onecolumn">
                                     <span class="label">אישור חתום על ידי הגזבר כי ההודעה נשלחה לכל הנישומים באופן אישי</span>
-                                    <div class="attachmentcontainer" style="margin-top:92px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" id="attch4" tfsname="אישור חתום על ידי הגזבר כי ההודעה נשלחה לכל הנישומים באופן אישי" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
-                                <li class="attachment">
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="attachment onecolumn">
                                     <span class="label">אישור חתום על ידי היועץ המשפטי כי ההודעה נשלחה לכל הנישומים באופן אישי</span>
-                                    <div class="attachmentcontainer" style="margin-top:92px;">
+                                    <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" id="attch4" tfsname="אישור חתום על ידי היועץ המשפטי כי ההודעה נשלחה לכל הנישומים באופן אישי" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
                                 </li>
                             </ul>
+
                             <!--END Upload Files SECTION-->
-
-
                             <!--START FORM SUBMIT BUTTON-->
                             <div class="clear"></div>
                             <div class="submit2">
                                 <input class="tfsInputText fleft submit2" id="btnSubmit" type="button" value="שלח" tfsaction="submit" />
                             </div>
                             <!--END FORM SUBMIT BUTTON-->
-
-
                             <!--START FOOTER OFFICIAL USAGE-->
                             <div class="saprate_3"></div>
                             <div class="heading_3">לשימוש משרדי</div>

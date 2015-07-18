@@ -335,6 +335,22 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
     text-align:right;
 }
 
+
+.onecolumn
+{
+    width:680px !important;
+    float:right !important;
+}
+
+.onecolumn .label
+{
+    max-width:455px !important;
+}
+
+.onecolumn div{
+    float:left !important;
+}
+
 .twocolumn
 {
     width:415px !important;
