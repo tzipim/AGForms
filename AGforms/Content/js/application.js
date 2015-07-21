@@ -381,6 +381,35 @@ function DeleteEmpUnderPersonalCont(delImage, e, cellNumId, tblId) {
 
 /* END section form 4.18*/
 
+/* START section form 4.12*/
+
+function AddtblReqAreaRevSharing(btnAdd, cellNum) {
+    AddRow(btnAdd, cellNum);
+}
+
+function DeletetblReqAreaRevSharing(delImage, e, cellNumId, tblId) {
+    DelRow(e, cellNumId, tblId);
+}
+
+
+function AddtblObtPrpTaxRevenue(btnAdd, cellNum) {
+    AddRow(btnAdd, cellNum);
+}
+
+function DeletetblObtPrpTaxRevenue(delImage, e, cellNumId, tblId) {
+    DelRow(e, cellNumId, tblId);
+}
+
+function AddtblReqAreaTaxSharing(btnAdd, cellNum) {
+    AddRow(btnAdd, cellNum);
+}
+
+function DeletetblReqAreaTaxSharing(delImage, e, cellNumId, tblId) {
+    DelRow(e, cellNumId, tblId);
+}
+
+/* END section form 4.12*/
+
 
 //----- End User Functions -----------------------------------------------
 
