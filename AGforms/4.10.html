@@ -44,44 +44,44 @@
                             <div class="clear"></div>
                             <ul class="first-view">
                                 <li>
-                                    <span class="label">מספר מהדורה</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">מספר מהדורה</span>
                                     <input class="inputtext" id="tbReference" value="" tfsname="מספר מהדורה" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
                                 <li>
-                                    <span class="label">אסמכתא</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">אסמכתא</span>
                                     <input class="inputtext" id="tbCity" value="" tfsname="אסמכתא" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
                                 <li>
-                                    <span class="label">ישוב</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">ישוב</span>
                                     <input class="inputtext" id="tbMunBody" value="" tfsname="ישוב" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
                                 <li>
-                                    <span class="label">גוף מוניציפלי</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">גוף מוניציפלי</span>
                                     <input class="inputtext" id="tbSubtypeRequest" value="" tfsname="גוף מוניציפלי" tfsrequired="" tfsdata="" disabled="disabled" />
                                 </li>
                             </ul>
                             <ul class="thirdinput">
                                 <li>
-                                    <span class="label">שם הבקשה</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">שם הבקשה</span>
                                     <textarea id="tbApplicationName" tfsmaxlength="100" tfsname="שם הבקשה" tfsrequired="" tfsdata="" rows="4" cols="100"></textarea>
                                 </li>
                             </ul>
                             <ul class="thirdinput">
                                 <li>
-                                    <span class="label"> שנת התקציב</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label"> שנת התקציב</span>
                                     <div class="combocontainer" style="margin-top:20px;">
                                         <select class="tfsInputCobmo" id="ddlBudgetYear" tfsrequired="" style="display: none;" tfsname="שנת התקציב" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=BudgetYr;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="label"> איש קשר בגוף</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label"> איש קשר בגוף</span>
                                     <div class="combocontainer" style="margin-top:20px;">
                                         <select class="tfsInputCobmo" id="ddlContactBody" tfsrequired="" style="display:none;" tfsname="איש קשר בגוף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ContBody;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
@@ -89,22 +89,25 @@
                             </ul>
                             <ul class="thirdinput" style="margin-top:38px;">
                                 <li>
-                                    <span class="label">הערות</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">הערות</span>
                                     <textarea id="tbNotesSection1" tfsrequired="" tfsmaxlength="2000" tfsname="הערות" tfsdata="" rows="4" cols="100"></textarea>
                                 </li>
                             </ul>
                             <!--END HEADER SECTION-->
+
+
+
                             <!--START Information Request SECTION-->
                             <div class="saprate_2"></div>
                             <div class="clear"></div>
                             <div class="heading_3">פרטי הבקשה</div>
                             <ul class="first-view">
                                 <li>
+                                    <span class="myAsteria">*</span>
                                     <span class="label">
                                         תאריך אישור הצו על ידי המועצה
                                     </span>
-                                    <span class="myAsteria">*</span>
                                     <div class="calendarcontainer" style="margin-top:43px;">
                                         <input class="calendarinput" id="XXXX" size="8" maxlength="10" value="" tfsrequiredmark="background"
                                                tfsname="תאריך אישור הצו על ידי המועצה" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
@@ -112,8 +115,8 @@
 
                                 </li>
                                 <li>
-                                    <span class="label">הטלה ראשונה</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">הטלה ראשונה</span>
 
                                     <div class="combocontainer" style="margin-top:43px;">
                                         <select class="tfsInputCobmo" id="XXXX" style="display: none;" tfsname="הטלה ראשונה" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=AuctionType;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
@@ -121,10 +124,10 @@
                                 </li>
 
                                 <li>
+                                    <span class="myAsteria">*</span>
                                     <span class="label">
                                         תאריך אישור הצ על ידי הוועד והמקומי
                                     </span>
-                                    <span class="myAsteria">*</span>
                                     <div class="calendarcontainer" style="margin-top:43px;">
                                         <input class="calendarinput" id="XXXX" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך אישור הצ על ידי הוועד והמקומי" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                     </div>
@@ -137,84 +140,14 @@
                             <div class="clear"></div>
 
 
-                            <div style="width:934px;overflow-x:scroll;">
+                            <div style="width:934px;overflow-x:scroll;direction:rtl;">
                                 <table width="100%" class="Grid taxchange largetable" id="tblTaxChange" tfsdata=tfsdata tfsstaticrows="true">
                                     <thead>
                                         <tr valign="top">
-                                            <th>
-                                                הערות
-                                            </th>
-                                            <th>
-                                                שיעור משנת (שנת הגשת הבקשה – 2) עד לשנת הגשת
-                                                הבקשה (כולל שיעור העדכון) (י)
-                                            </th>
-                                            <th>
-                                                מספר הנישומים (ט)
-                                            </th>
-                                            <th>
-                                                סה"כ תוספת/ הפחתת הכנסה בש"ח הנגזרת מההעלאה /מהפחתה בטור ד' (ח)
-                                            </th>
-                                            <th>
-                                                סה"כ הכנסה בשכלול ה
-                                                שטח לפי צו הארנונה
-                                                המבוקש
-                                                (ז)
-                                            </th>
-
-                                            <th>
-                                                סה"כ הכנסה בשכלול ה
-                                                שטח לפי צו הארנונה הנוכחי
-                                                (ו)
-                                            </th>
-                                            <th>
-                                                סה"כ שטח במ"ר (ה)
-                                            </th>
-                                            <th>
-                                                ההעלאה/ הפחתה המבוקשת באחוזים לעומת התעריף המאושר
-                                                (ד)
-                                            </th>
-                                            <th>
-                                                התעריף המבוקש לשנה נוכחית (כולל שיעור העדכון) (ג)
-                                            </th>
-                                            <th>
-                                                התעריף המאושר במסגרת תקנות הארנונה שנה נוכחית (כולל שיעור העדכון) (ב)
-                                            </th>
-                                            <th>
-                                                התעריף שנה אחורה (א)
-
-                                            </th>
-                                            <th>
-                                                תאור הסיווג השלישוני של הנכס בצו המיסים המבוקש
-                                            </th>
-                                            <th>
-                                                תאור הסיווג השלישוני של הנכס בצו המיסים הנוכחי
-                                            </th>
+                                            <th style="min-width:40px;">מספר</th>
                                             <th>
                                                 <span class="myAsteria">*</span>
-                                                מספר הסיווג השלישוני של הנכס בצו המיסים המבוקש
-                                            </th>
-
-                                            <th>
-                                                מספר הסיווג השלישוני של הנכס בצו המיסים הנוכחי (מה ג)
-                                            </th>
-                                            <th>
-                                                תאור הסיווג המשני של הנכס בצו המיסים המבוקש
-                                            </th>
-                                            <th>
-                                                <span class="myAsteria">*</span>
-                                                תאור הסיווג המשני של הנכס בצו המיסים הנוכחי
-                                            </th>
-                                            <th>
-                                                <span class="myAsteria">*</span>
-                                                מספר הסיווג המשני של הנכס בצו המיסים המבוקש
-                                            </th>
-                                            <th>
-                                                <span class="myAsteria">*</span>
-                                                מספר הסיווג המשני של הנכס בצו המיסים הנוכחי  (רמה ב)
-                                            </th>
-                                            <th>
-                                                <span class="myAsteria">*</span>
-                                                סיווג ראשי של סוג הנכס בצו המיסים רמה א
+                                                משמעות כספית
                                             </th>
                                             <th>
                                                 <span class="myAsteria">*</span>
@@ -222,83 +155,96 @@
                                             </th>
                                             <th>
                                                 <span class="myAsteria">*</span>
-                                                משמעות כספית
+                                                סיווג ראשי של סוג הנכס בצו המיסים רמה א
                                             </th>
-                                            <th style="min-width:40px;">מספר</th>
+                                            <th>
+                                                <span class="myAsteria">*</span>
+                                                מספר הסיווג המשני של הנכס בצו המיסים הנוכחי  (רמה ב)
+                                            </th>
+                                            <th>
+                                                <span class="myAsteria">*</span>
+                                                מספר הסיווג המשני של הנכס בצו המיסים המבוקש
+                                            </th>
+                                            <th>
+                                                <span class="myAsteria">*</span>
+                                                תאור הסיווג המשני של הנכס בצו המיסים הנוכחי
+                                            </th>
+                                            <th>
+                                                תאור הסיווג המשני של הנכס בצו המיסים המבוקש
+                                            </th>
+                                            <th>
+                                                מספר הסיווג השלישוני של הנכס בצו המיסים הנוכחי (מה ג)
+                                            </th>
+                                            <th>
+                                                <span class="myAsteria">*</span>
+                                                מספר הסיווג השלישוני של הנכס בצו המיסים המבוקש
+                                            </th>
+                                            <th>
+                                                תאור הסיווג השלישוני של הנכס בצו המיסים הנוכחי
+                                            </th>
+                                            <th>
+                                                תאור הסיווג השלישוני של הנכס בצו המיסים המבוקש
+                                            </th>
+                                            <th>
+                                                התעריף שנה אחורה (א)
+
+                                            </th>
+                                            <th>
+                                                התעריף המאושר במסגרת תקנות הארנונה שנה נוכחית (כולל שיעור העדכון) (ב)
+                                            </th>
+                                            <th>
+                                                התעריף המבוקש לשנה נוכחית (כולל שיעור העדכון) (ג)
+                                            </th>
+                                            <th>
+                                                ההעלאה/ הפחתה המבוקשת באחוזים לעומת התעריף המאושר
+                                                (ד)
+                                            </th>
+                                            <th>
+                                                סה"כ שטח במ"ר (ה)
+                                            </th>
+                                            <th>
+                                                סה"כ הכנסה בשכלול ה
+                                                שטח לפי צו הארנונה הנוכחי
+                                                (ו)
+                                            </th>
+                                            <th>
+                                                סה"כ הכנסה בשכלול ה
+                                                שטח לפי צו הארנונה
+                                                המבוקש
+                                                (ז)
+                                            </th>
+                                            <th>
+                                                סה"כ תוספת/ הפחתת הכנסה בש"ח הנגזרת מההעלאה /מהפחתה בטור ד' (ח)
+                                            </th>
+                                            <th>
+                                                מספר הנישומים (ט)
+                                            </th>
+                                            <th>
+                                                שיעור משנת (שנת הגשת הבקשה – 2) עד לשנת הגשת
+                                                הבקשה (כולל שיעור העדכון) (י)
+                                            </th>
+                                            <th>
+                                                הערות
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr valign="top">
-                                            <td>
-                                                <textarea style="width:90px;" id="tbNotesTaxChange" tfsname="הערות" tfsdata="" rows="2" cols="5"></textarea>
-                                                <span>
-                                                    <img width="16" height="16" class="tfsImgBtn handcursor" onclick="DeleteTaxChange(this, event, 'tblTaxChange', 'tblTaxChange')" alt="מחק רשומה" src="img/cross-img.png" tfsaction="delTableRow" />
-                                                </span>
-                                            </td>
-
-                                            <!--END SUM-->
-                                            <td>
-                                                <input class="inputtext sincerate" id="tbsincerate" tfsname='שיעור משנת (שנת הגשת הבקשה – 2) עד לשנת הגשת
-                                            הבקשה (כולל שיעור העדכון) (י)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                       
+                                            <td style="padding-top:13px;">
+                                                <span id="tdNumTaxChange" name="tdNumTaxChange" tfsdefault=1>1</span>
                                             </td>
                                             <td>
-                                                <input class="inputtext numtaxpay" id="numtaxpay" tfsname='מספר הנישומים (ט)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext totaddi" id="tbTotAdd" tfsname='סה"כ תוספת/ הפחתת הכנסה בש"ח הנגזרת מההעלאה /מהפחתה בטור ד' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext totincordreq" id="tbtotincordreq" tfsname='סה"כ הכנסה בשכלול ה שטח לפי צו הארנונה המבוקש(ז)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext totinccurrtaxwarr" id="tbtotinccurrtaxwarr" tfsname='סה"כ הכנסה בשכלול ה שטח לפי צו הארנונה הנוכחי(ו)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext totarsqmet" id="tbtotarsqmet" tfsname='סה"כ שטח במ"ר (ה)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext incdecdesper" id="tbincdecdesper" tfsname='ההעלאה/ הפחתה המבוקשת באחוזים לעומת התעריף המאושר(ד)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext cuuryrreqpay" id="tbcuuryrreqpay" tfsname='התעריף המבוקש לשנה נוכחית (כולל שיעור העדכון) (ג)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext cuuryrreqtar" id="tbcuuryrreqtar" tfsname='התעריף המאושר במסגרת תקנות הארנונה שנה נוכחית (כולל שיעור העדכון) (ב)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext localtaxregula" id="tblocaltaxregula" tfsname='התעריף שנה אחורה (א)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
-                                            </td>
-                                            <!--START SUM-->
-
-                                            <td>
-                                                <input class="inputtext" tfsname="תאור הסיווג השלישוני של הנכס בצו המיסים המבוקש" id="tbDescProTaxSpcOrd" value="" tfsdata="" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext" tfsmaxlength="200" tfsname="תאור הסיווג השלישוני של הנכס בצו המיסים הנוכחי  " id="tbDescCurProTaxOrd" value="" tfsdata="" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext" id="tbNoPropTaxOrd" tfsname="מספר הסיווג השלישוני של הנכס בצו המיסים המבוקש" tfsconstraint="checkIdNum('tbTerrClassNum')" tfsrequired="" value="" tfsdata="" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext" id="tbTerrClassNum" tfsname="מספר הסיווג השלישוני של הנכס בצו המיסים הנוכחי (מה ג)" tfsconstraint="checkIdNum('tbTerrClassNum')" maxlength="9" value="" tfsdata="" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext" tfsmaxlength="100" tfsname="תאור הסיווג המשני של הנכס בצו המיסים המבוקש" id="tbDescProSec" value="" tfsdata="" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext" tfsname="תאור הסיווג המשני של הנכס בצו המיסים הנוכחי" id="tbSecClassDesc" tfsrequired="" value="" tfsdata="" />
-                                            </td>
-                                            <td>
-                                                <input class="inputtext" id="tbNumSecClass" tfsname='מספר הסיווג המשני של הנכס בצו המיסים המבוקש' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
-                                            </td>
-                                            <td>
-                                                &nbsp;
-                                                <div class="calendarcontainer" style="margin-top:-19px;">
-                                                    <input class="calendarinput" id="tbSecClasNum" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="מספר הסיווג המשני של הנכס בצו המיסים הנוכחי  (רמה ב)" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                                <div class="combocontainertable" style="width:110px;height:26px;float:right;border:0px solid red;margin-top:0px;">
+                                                    <select class="tfsInputCobmo" id="ddlMeanMerc" style="display: none;" tfsrequired="" tfsname="משמעות כספית" tfsdatatype="LookUpWindow" tfsvalue=""
+                                                            tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=MeanMerc;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                                 </div>
                                             </td>
+                                            <td>
+                                                <input class="inputtext" id="tbDescChange" tfsname="תאור השינוי" tfsconstraint="checkIdNum('tbDescChange')" maxlength="9" value="" tfsrequiredmark="background" tfsrequired="" tfsdata="" />
+                                            </td>
                                             <td style="width:90px;">
-                                                <div class="combocontainertable" style="margin-top:9px;">
+                                                <div class="combocontainertable" style="margin-top:1px;">
                                                     <select class="tfsInputCobmo" id="ddlTypeTax" tfsname="XXX" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsvalue="" tfsdatatype="LookUpWindow" tfsdata="">
                                                         <option selected="selected" value="זכר">זכר</option>
                                                         <option value="נקבה">נקבה</option>
@@ -306,44 +252,98 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="inputtext" id="tbDescChange" tfsname="תאור השינוי" tfsconstraint="checkIdNum('tbDescChange')" maxlength="9" value="" tfsrequiredmark="background" tfsrequired="" tfsdata="" />
-                                            </td>
-                                            <td>
-                                                <div class="combocontainertable" style="width:110px;height:26px;float:right;border:0px solid red;margin-top:9px;">
-                                                    <select class="tfsInputCobmo" id="ddlMeanMerc" style="display: none;" tfsrequired="" tfsname="משמעות כספית" tfsdatatype="LookUpWindow" tfsvalue=""
-                                                            tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=MeanMerc;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                                &nbsp;
+                                                <div class="calendarcontainertable" style="margin-top:-19px;">
+                                                    <input class="calendarinput" id="tbSecClasNum" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="מספר הסיווג המשני של הנכס בצו המיסים הנוכחי  (רמה ב)" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                                 </div>
                                             </td>
-                                            <td style="padding-top:21px;">
-                                                <span id="tdNumTaxChange" name="tdNumTaxChange" tfsdefault=1>1</span>
+                                            <td>
+                                                <input class="inputtext" id="tbNumSecClass" tfsname='מספר הסיווג המשני של הנכס בצו המיסים המבוקש' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext" tfsname="תאור הסיווג המשני של הנכס בצו המיסים הנוכחי" id="tbSecClassDesc" tfsrequired="" value="" tfsdata="" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext" tfsmaxlength="100" tfsname="תאור הסיווג המשני של הנכס בצו המיסים המבוקש" id="tbDescProSec" value="" tfsdata="" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext" id="tbTerrClassNum" tfsname="מספר הסיווג השלישוני של הנכס בצו המיסים הנוכחי (מה ג)" tfsconstraint="checkIdNum('tbTerrClassNum')" maxlength="9" value="" tfsdata="" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext" id="tbNoPropTaxOrd" tfsname="מספר הסיווג השלישוני של הנכס בצו המיסים המבוקש" tfsconstraint="checkIdNum('tbTerrClassNum')" tfsrequired="" value="" tfsdata="" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext" tfsmaxlength="200" tfsname="תאור הסיווג השלישוני של הנכס בצו המיסים הנוכחי  " id="tbDescCurProTaxOrd" value="" tfsdata="" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext" tfsname="תאור הסיווג השלישוני של הנכס בצו המיסים המבוקש" id="tbDescProTaxSpcOrd" value="" tfsdata="" />
+                                            </td>
+
+                                            <!--START SUM-->
+                                            <td>
+                                                <input class="inputtext localtaxregula" id="tblocaltaxregula" tfsname='התעריף שנה אחורה (א)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext cuuryrreqtar" id="tbcuuryrreqtar" tfsname='התעריף המאושר במסגרת תקנות הארנונה שנה נוכחית (כולל שיעור העדכון) (ב)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext cuuryrreqpay" id="tbcuuryrreqpay" tfsname='התעריף המבוקש לשנה נוכחית (כולל שיעור העדכון) (ג)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext incdecdesper" id="tbincdecdesper" tfsname='ההעלאה/ הפחתה המבוקשת באחוזים לעומת התעריף המאושר(ד)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext totarsqmet" id="tbtotarsqmet" tfsname='סה"כ שטח במ"ר (ה)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext totinccurrtaxwarr" id="tbtotinccurrtaxwarr" tfsname='סה"כ הכנסה בשכלול ה שטח לפי צו הארנונה הנוכחי(ו)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext totincordreq" id="tbtotincordreq" tfsname='סה"כ הכנסה בשכלול ה שטח לפי צו הארנונה המבוקש(ז)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext totaddi" id="tbTotAdd" tfsname='סה"כ תוספת/ הפחתת הכנסה בש"ח הנגזרת מההעלאה /מהפחתה בטור ד' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext numtaxpay" id="numtaxpay" tfsname='מספר הנישומים (ט)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <td>
+                                                <input class="inputtext sincerate" id="tbsincerate" tfsname='שיעור משנת (שנת הגשת הבקשה – 2) עד לשנת הגשת
+                                            הבקשה (כולל שיעור העדכון) (י)' tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" onkeyup="SumTotalTaxChange();" />
+                                            </td>
+                                            <!--END SUM-->
+
+                                            <td>
+                                                <textarea style="width:90px;" id="tbNotesTaxChange" tfsname="הערות" tfsdata="" rows="2" cols="5"></textarea>
+                                                <div>
+                                                    <img width="16" height="16" class="tfsImgBtn handcursor" onclick="DeleteTaxChange(this, event, 'tblTaxChange', 'tblTaxChange')" alt="מחק רשומה" src="img/cross-img.png" tfsaction="delTableRow" />
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
                                     <tr valign="top" class="bottom-table">
-                                        <td>&nbsp;</td>
-
-                                        <td id="spnsincerate"></td>
-                                        <td id="spnnumtaxpay"></td>
-                                        <td id="spntotaddi"></td>
-                                        <td id="spntotincordreq"></td>
-                                        <td id="spntotinccurrtaxwarr"></td>
-                                        <td id="spntotarsqmet"></td>
-                                        <td id="spnincdecdesper"></td>
-                                        <td id="spncuuryrreqpay"></td>
-                                        <td id="spncuuryrreqtar"></td>
-                                        <td id="spnlocaltaxregula"></td>
-
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
                                         <td colspan="2" class="totaltype">מספר</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td id="spnlocaltaxregula"></td>
+                                        <td id="spncuuryrreqtar"></td>
+                                        <td id="spncuuryrreqpay"></td>
+                                        <td id="spnincdecdesper"></td>
+                                        <td id="spntotarsqmet"></td>
+                                        <td id="spntotinccurrtaxwarr"></td>
+                                        <td id="spntotincordreq"></td>
+                                        <td id="spntotaddi"></td>
+                                        <td id="spnnumtaxpay"></td>
+                                        <td id="spnsincerate"></td>
+                                        <td>&nbsp;</td>
                                     </tr>
                                 </table>
                             </div>
@@ -361,34 +361,34 @@
                             <div class="heading_3">פרטי הבקשה</div>
                             <ul class="first-view">
                                 <li>
-                                    <span class="label"> אישור היועץ המשפטי לרשות</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label"> אישור היועץ המשפטי לרשות</span>
                                     <div class="combocontainer" style="margin-top:20px;">
                                         <select class="tfsInputCobmo" id="ddlAttoApprAuth_1" tfsrequired="" style="display: none;" tfsname="אישור היועץ המשפטי לרשות" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true"
                                                 tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=AttoApprAuth;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="label"> אישור ראש הרשות</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label"> אישור ראש הרשות</span>
                                     <div class="combocontainer" style="margin-top:20px;">
                                         <select class="tfsInputCobmo" id="ddlApprAuth" tfsrequired="" style="display: none;" tfsname="אישור ראש הרשות" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true"
                                                 tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ApprovAuth;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="label"> אישור גזבר הרשות</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label"> אישור גזבר הרשות</span>
                                     <div class="combocontainer" style="margin-top:20px;">
                                         <select class="tfsInputCobmo" id="ddlTreaApprAuth" tfsrequired="" style="display: none;" tfsname="אישור גזבר הרשות" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true"
                                                 tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=TreaApprAuth;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
                                 <li>
+                                    <span class="myAsteria">*</span>
                                     <span class="label">
                                         אישור היועץ המשפטי לרשות
                                     </span>
-                                    <span class="myAsteria">*</span>
                                     <div class="combocontainer" style="margin-top:20px;">
                                         <select class="tfsInputCobmo" id="ddlAttorAprAuth" tfsrequired="" style="display: none;" tfsname="אישור היועץ המשפטי לרשות" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true"
                                                 tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=AttorApprAuth;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
@@ -405,8 +405,8 @@
                            
                             <ul class="thirdinput">
                                 <li class="attachment onecolumn">
-                                    <span class="label">צו המיסים שנה נוכחית כולל השינויים המבוקשים בבקשה זו מודגשים בצבע שונה</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">צו המיסים שנה נוכחית כולל השינויים המבוקשים בבקשה זו מודגשים בצבע שונה</span>
                                     <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch4" tfsname="צו המיסים שנה נוכחית כולל השינויים המבוקשים בבקשה זו מודגשים בצבע שונה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
@@ -414,8 +414,8 @@
                             </ul>
                             <ul class="thirdinput">
                                 <li class="attachment onecolumn">
-                                    <span class="label">צו המיסים שנה נוכחית ללא השינויים המבוקשים</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">צו המיסים שנה נוכחית ללא השינויים המבוקשים</span>
                                     <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch3" tfsname="צו המיסים שנה נוכחית ללא השינויים המבוקשים" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
@@ -431,8 +431,8 @@
                             </ul>
                             <ul class="thirdinput">
                                 <li class="attachment onecolumn">
-                                    <span class="label">הסבר מפורט מדוע מבוקש האישור החריג בצו המסים</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">הסבר מפורט מדוע מבוקש האישור החריג בצו המסים</span>
                                     <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch1" tfsname="הסבר מפורט מדוע מבוקש האישור החריג בצו המסים" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
@@ -440,8 +440,8 @@
                             </ul>
                             <ul class="thirdinput">
                                 <li class="attachment onecolumn">
-                                    <span class="label">צו המיסים שנה אחורה</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">צו המיסים שנה אחורה</span>
                                     <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch5" tfsname="צו המיסים שנה אחורה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
@@ -449,8 +449,8 @@
                             </ul>
                             <ul class="thirdinput">
                                 <li class="attachment onecolumn">
-                                    <span class="label">צו המיסים שנתיים אחורה</span>
                                     <span class="myAsteria">*</span>
+                                    <span class="label">צו המיסים שנתיים אחורה</span>
                                     <div class="attachmentcontainer" style="margin-top:0px;">
                                         <input class="tfsInputText" tfsrequired="" tfsrequiredmark="background" id="attch6" tfsname="צו המיסים שנתיים אחורה" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
                                     </div>
@@ -496,6 +496,9 @@
                                 <input class="tfsInputText fleft submit2" id="btnSubmit" type="button" value="שלח" tfsaction="submit" />
                             </div>
                             <!--END FORM SUBMIT BUTTON-->
+
+
+
                             <!--START FOOTER OFFICIAL USAGE-->
                             <div class="saprate_3"></div>
                             <div class="heading_3">לשימוש משרדי</div>
@@ -507,22 +510,22 @@
                                         <input class="inputtext" id="tbRequested" value="" tfsname="מגיש הבקשה" tfsdata="" />
                                     </li>
                                     <li>
-                                        <span class="label">תאריך שליחת הטופס</span>
                                         <span class="myAsteria">*</span>
+                                        <span class="label">תאריך שליחת הטופס</span>
                                         <div class="calendarcontainer">
                                             <input class="calendarinput" id="dtSubForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שליחת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                         </div>
                                     </li>
                                     <li>
-                                        <span class="label">תאריך שמירת הטופס</span>
                                         <span class="myAsteria">*</span>
+                                        <span class="label">תאריך שמירת הטופס</span>
                                         <div class="calendarcontainer">
                                             <input class="calendarinput" id="dtMaintForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שמירת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                         </div>
                                     </li>
                                     <li>
-                                        <span class="label">תאריך יצירת הטופס</span>
                                         <span class="myAsteria">*</span>
+                                        <span class="label">תאריך יצירת הטופס</span>
                                         <div class="calendarcontainer">
                                             <input class="calendarinput" id="tbDtCreaeForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך יצירת הטופס" tfsdata="" tfsrequired="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
                                         </div>
