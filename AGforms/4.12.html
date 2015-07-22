@@ -97,40 +97,40 @@
 
 
                             <!--START SubType Request SECTION-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2"> תת סוג הבקשה</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
                                 <li class="threecolumn">
-                                    <span class="label">בקשה ל חלוקת הכנסות</span>
-                                    <div class="checkbox fleft" style="margin-top:5px;margin-left:55px;">
+                                    <div class="checkbox fright" style="margin-top:5px;margin-left:15px;">
                                         <input class="tfsInputCheckBox" type="checkbox" id="chkReqRevSharing" name="בקשה ל חלוקת הכנסו" tfsdata=tfsdata />
                                     </div>
+                                    <span class="label">בקשה ל חלוקת הכנסות</span>
                                 </li>
                                 <li class="threecolumn">
-                                    <span class="label">בקשה לשינוי מעמד מוניציפלי</span>
-                                    <div class="checkbox fleft" style="margin-top:5px;margin-left:55px;">
+                                    <div class="checkbox fright" style="margin-top:5px;margin-left:15px;">
                                         <input class="tfsInputCheckBox" type="checkbox" id="chkMunStaChngReq" name="בקשה לשינוי מעמד מוניציפלי" tfsdata=tfsdata />
                                     </div>
+                                    <span class="label">בקשה לשינוי מעמד מוניציפלי</span>
                                 </li>
                                 <li class="threecolumn">
-                                    <span class="label">בקשה לשינוי גבולות שיפוט</span>
-                                    <div class="checkbox fleft" style="margin-top:5px;margin-left:55px;">
+                                    <div class="checkbox fright" style="margin-top:5px;margin-left:15px;">
                                         <input class="tfsInputCheckBox" type="checkbox" id="chkBoubdrOfJurisDi" name="בקשה לשינוי גבולות שיפוט" tfsdata=tfsdata />
                                     </div>
+                                    <span class="label">בקשה לשינוי גבולות שיפוט</span>
                                 </li>
                             </ul>
                             <!--END SubType Request SECTION-->
 
 
                             <!--START Applying for a change in municipal status-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2">הגשת בקשה לשינוי מעמד מוניציפלי</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
-                                <li>
+                                <li class="onecolumn">
                                     <span class="label"> שינוי מעמד מוניציפלי</span>
-                                    <div class="combocontainer" style="margin-top:20px;">
+                                    <div class="combocontainer" style="margin-top:-11px;margin-left:260px;">
                                         <select class="tfsInputCobmo" id="ddlChngMunStatusTo" tfsname="שינוי מעמד מוניציפלי" style="display: none;" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=RepForm;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
@@ -138,7 +138,7 @@
                             <!--END Applying for a change in municipal status-->
 
                             <!--START The population size-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2"> גודל אוכלוסייה</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
@@ -167,7 +167,7 @@
 
 
                             <!--START development of self-projected revenues-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2"> התפתחות חזויה בהכנסות עצמיות</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
@@ -199,7 +199,7 @@
 
 
                             <!--START Master Plan-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2">תכנית מתאר</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
@@ -223,7 +223,7 @@
                             <!--END Master Plan-->
 
                             <!--START Planning data / demographic-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2">נתונים תכנוניים/דמוגרפיים(בהתאם לסיווג ארנונה)</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
@@ -265,7 +265,7 @@
 
 
                             <!--START data concerning the requested area for revenue sharing-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2">נתונים בדבר השטח המבוקש לחלוקת הכנסות</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
@@ -364,16 +364,17 @@
 
 
                             <!--START obtaining property tax revenue that is not within the jurisdiction of surface PA-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2">קבלת הכנסות ארנונה משטח שאינו בתחום שיפוט</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
                                 <li class="onecolumn">
-                                    <span class="myAsteria">*</span>
-                                    <span class="label">האם הרשות מקבלת הכנסות ארנונה משטח שאינו בתחום שיפוטה ?</span>
-                                    <div class="checkbox" style="margin-top:5px;margin-left:148px;">
+                                    <div class="checkbox" style="margin-top:5px;margin-left:30px;float:right !important;">
                                         <input class="tfsInputCheckBox" type="checkbox" id="ISAuthRecivIncTax" name="האם הרשות מקבלת הכנסות ארנונה משטח שאינו בתחום שיפוטה ?" tfsdata=tfsdata />
                                     </div>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">האם הרשות מקבלת הכנסות ארנונה משטח שאינו בתחום שיפוטה ?</span>
+                                    
                                 </li>
                             </ul>
                             <ul class="thirdinput">
@@ -454,7 +455,7 @@
 
 
                             <!--START Additional Documents-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2"> נספחים מצורפים</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">
@@ -558,7 +559,7 @@
 
 
                             <!--START data concerning the requested area for revenue sharing-->
-                            <div class="saprate-line"></div>
+                            <div class="saprate_2"></div>
                             <div class="heading2"> נתונים בדבר השטח המבוקש לחלוקת הכנסות</div>
                             <div class="clear"></div>
                             <ul class="thirdinput">

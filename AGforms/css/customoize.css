@@ -402,3 +402,5 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
 {
     direction:rtl;
 }
+
+.checkbox input  { width:25px; height:25px; border:solid 1px #999; color:#666666; font-size:14px; text-align:right; padding-right:5px; float:right; margin-top:-5px !important;}
