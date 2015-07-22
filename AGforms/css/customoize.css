@@ -398,3 +398,7 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
 {
     padding-right:15px;
 }
+.label
+{
+    direction:rtl;
+}
