@@ -393,3 +393,8 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
 {
     border:0px !important;
 }
+
+.checkbox
+{
+    padding-right:15px;
+}
