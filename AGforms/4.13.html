@@ -1,0 +1,590 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE9' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content=VBScript name=VI60_defaultClientScript /><!--style-->
+    <title>App Form  - 4.13</title>
+
+    <link href="/css/customoize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/HtmlPopup_hebrew.css" rel="stylesheet" />
+    <link href="/css/HtmlValidatorHelper_hebrew.css" rel="stylesheet" />
+    <link href="/css/Calendar_Hebrew.css" rel="stylesheet" />
+
+</head>
+<body onload="window_onload()" id="mainBody" tofes="">
+    <span id="GeneralAttributes" tfslanguage="hebrew" tfsappmode="debug" tfssubmitactionparam="action:postform;url:http://localhost/agformspmweb/setform.aspx;actiononreturn:function{showmessage}"
+          tfssubmitaction="submitbyhttp" tfsformid="form1" tfsdisablebrowserfilemenu="true"
+          tfsrequirederrordisplay="border:Red" tfssecurityalert="true" tfspluginversion="1.4.0.91"
+          tfsformname="טופס דוגמה לתהליכים &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© כל הזכויות שמורות מדינת ישראל שרות הטפסים "
+          tfsversion="1.9" tfsprintsetup="CheckFormIntegrityBeforePrint:true"></span>
+
+    <div class=tfsOuterDiv id=OuterDiv>
+        <div class=tfsScrollDiv id=scrolldiv>
+            <div class=tfsMainDiv id=mainDiv>
+
+                <div class="container clearfix">
+                    <!--header start here-->
+                    <div class="header">
+                        <div class="wrapper">
+                            <div class="logo"><a href=""><img src="img/logo.png" /></a></div>
+                            <div class="logo-left"><img src="img/left-img-jheader.png" /></div>
+                        </div>
+                    </div>
+                    <!--//header end here-->
+                    <!--content part start here-->
+                    <div class="contet-center">
+                        <div class="wrapper">
+                            <div class="heading1"> בקשה לנחיצות משרה</div>
+
+                            <!--START HEADER SECTION-->
+                            <div class="saprate-line"></div>
+                            <div class="heading2">פרטי הטופס</div>
+                            <div class="clear"></div>
+                            <ul class="first-view">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">מספר מהדורה</span>
+                                    <input class="inputtext" id="tbReference" value="" tfsname="מספר מהדורה" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">אסמכתא</span>
+                                    <input class="inputtext" id="tbCity" value="" tfsname="אסמכתא" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">ישוב</span>
+                                    <input class="inputtext" id="tbMunBody" value="" tfsname="ישוב" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">גוף מוניציפלי</span>
+                                    <input class="inputtext" id="tbSubtypeRequest" value="" tfsname="גוף מוניציפלי" tfsrequired="" tfsdata="" disabled="disabled" />
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">שם הבקשה</span>
+                                    <textarea id="tbApplicationName" tfsmaxlength="100" tfsname="שם הבקשה" tfsrequired="" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label"> שנת התקציב</span>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlBudgetYear" tfsrequired="" style="display: none;" tfsname="שנת התקציב" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=BudgetYr;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label"> איש קשר בגוף</span>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlContactBody" tfsrequired="" style="display:none;" tfsname="איש קשר בגוף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ContBody;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput" style="margin-top:38px;">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">הערות</span>
+                                    <textarea id="tbNotesSection1" tfsrequired="" tfsmaxlength="2000" tfsname="הערות" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <!--END HEADER SECTION-->
+
+
+                            <!--START Information Request SECTION-->
+                            <div class="saprate_2"></div>
+                            <div class="heading2"> בקשה לנחיצות משרה</div>
+                            <div class="clear"></div>
+                            
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">שם המשרה</span>
+                                    <input class="inputtext" id="tbWhereOfficers" tfsname="שם המשרה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li class="">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">משרה סטטוטורית</span>
+                                    <div style="margin-top:34px;">
+                                        <input style="width:24px;" id="rdbtnStaOfficesYes" type="radio" checked="checked" name="משרה סטטוטורית" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rdbtnStaOfficesNo" type="radio" name="משרה סטטוטורית" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">היקף משרה (אחוז)</span>
+                                    <input class="inputtext" id="tbScopePositionPer" tfsname='היקף משרה (אחוז)' tfsrequiredmark="background" tfsrequired="" tfsdatatype="decimal" tfsformat="##.##" tfsdata="" value="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label"> דירוג המשרה</span>
+                                    <div class="combocontainer" style="margin-top:20px;">
+                                        <select class="tfsInputCobmo" id="ddlRankOfficers" tfsname="דירוג המשרה" tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=XXXX;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">מתח דרגות</span>
+                                    <input class="inputtext" id="tbStressLvls" tfsname="מתח דרגות" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li class="">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">משרה זמנית</span>
+                                    <div style="margin-top:30px;">
+                                        <input style="width:24px;" id="rbtnTempJobYes" type="radio" checked="checked" name="משרה זמנית" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtnTempJobNo" type="radio" name="משרה זמנית" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תאריך העסקה צפוי</span>
+                                    <div class="calendarcontainer" style="margin-top:24px;">
+                                        <input class="calendarinput" id="dtOfExpctdTranac" tfsname="תאריך העסקה צפוי" tfsrequired="" tfsrequiredmark="background" size="8" maxlength="10" value="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תאריך סיום העסקה</span>
+                                    <div class="calendarcontainer" style="margin-top:24px;">
+                                        <input class="calendarinput" id="dtOfTermination" tfsname="תאריך סיום העסקה" tfsrequired="" tfsrequiredmark="background" size="8" maxlength="10" value="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="onecolumn">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">האם מדובר במשרה שבוטלה בעבר</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtISPreviouslyCancelledYes" type="radio" checked="checked" name="האם מדובר במשרה שבוטלה בעבר" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtISPreviouslyCancelledNo" type="radio" name="האם מדובר במשרה שבוטלה בעבר" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="onecolumn">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">האם העובד שמשרתו בוטלה קיבל תנאי פרישה מועדפים באישור משרד הפנים?</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtnEmpRecvdPrefTreatmentYes" type="radio" checked="checked" name="האם העובד שמשרתו בוטלה קיבל תנאי פרישה מועדפים באישור משרד הפנים?" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtnEmpRecvdPrefTreatmentNo" type="radio" name="האם העובד שמשרתו בוטלה קיבל תנאי פרישה מועדפים באישור משרד הפנים?" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="onecolumn">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">האם המשרה חייבת במכרז</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtHolderMustTenderYes" type="radio" checked="checked" name="האם המשרה חייבת במכרז" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtHolderMustTenderNo" type="radio" name="האם המשרה חייבת במכרז" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput" style="height:50px;">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תאריך ביטול המשרה</span>
+                                    <div class="calendarcontainer" style="margin-top:24px;">
+                                        <input class="calendarinput" id="dtOfCancellOffice" tfsname="תאריך ביטול המשרה" tfsrequired="" tfsrequiredmark="background" size="8" maxlength="10" value="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תאריך צפוי לאיוש</span>
+                                    <div class="calendarcontainer" style="margin-top:24px;">
+                                        <input class="calendarinput" id="dtExpectdToFill" tfsname="תאריך צפוי לאיוש" tfsrequired="" tfsrequiredmark="background" size="8" maxlength="10" value="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--END Information Request SECTION-->
+
+
+                            <!--START First Auction SECTION-->
+                            <div class="saprate_2"></div>
+                            <div class="heading2"> המכרז</div>
+                            <div class="clear"></div>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">היחידה</span>
+                                    <input class="inputtext" id="tbOnly" tfsname="היחידה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li class="">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">סוג המכרז</span>
+                                    <div style="margin-top:30px;">
+                                        <input style="width:24px;" id="rbAuctionTypeYes" type="radio" checked="checked" name="סוג המכרז" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbAuctionTypeNo" type="radio" name="סוג המכרז" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תאור התפקיד</span>
+                                    <textarea id="taTitleRole" tfsname="תאור התפקיד" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תנאי סף - השכלה</span>
+                                    <textarea id="tbPreqEducation" tfsname="תנאי סף - השכלה" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תנאי סף</span>
+                                    <textarea id="tbThresholdExperience" tfsname="תנאי סף" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תנאי סף</span>
+                                    <textarea id="tbThresholdMgmtExp" tfsname="תנאי סף" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תנאי סף</span>
+                                    <textarea id="tbThresholdAddiReqs" tfsname="תנאי סף" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li style="width:100%;">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label" style="max-width: 582px;">מאפייני העשייה הייחודיים בתפקיד</span>
+                                    <textarea id="tbFeaturesUniqActRole" tfsname="מאפייני העשייה הייחודיים בתפקיד" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">מינהלה</span>
+                                    <textarea id="tbAdministration" tfsname="מינהלה" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">כפיפות</span>
+                                    <input class="inputtext" id="tbSuordination" tfsname="כפיפות" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li class="attachment">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">צרופת נוסח המכרז</span>
+                                    <div class="attachmentcontainer" style="margin-top:8px;">
+                                        <input class="tfsInputText" id="attachAutionStyleSheer" tfsname="צרופת נוסח המכרז" tfsrequired="" tfsrequiredmark="background" tfsextensions="*.gif;*.bmp;*.jpg" tfsdatatype="attachment" tfsmaxfilesize="100" tfsdata=tfsdata />
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--END First Auction SECTION-->
+
+
+                            <!--START Vacation of office and Hionith SECTION-->
+                            <div class="saprate_2"></div>
+                            <div class="heading2"> התפנות המשרה וחיוניתה</div>
+                            <div class="clear"></div>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">שם פרטי של העובד המפנה</span>
+                                    <input class="inputtext" id="tbNameOfEmpTurnAround" tfsname="שם פרטי של העובד המפנה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">שם משפחה של העובד המפנה</span>
+                                    <input class="inputtext" id="tbLastNmEmpRef" tfsname="שם משפחה של העובד המפנה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">ת.ז העובד המפנה</span>
+                                    <input style="margin-top:30px;" class="inputtext" id="tbTurningEmpID" tfsname='ת.ז העובד המפנה' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תאריך תחילת העבודה של העובד המפנה</span>
+                                    <div class="calendarcontainer" style="margin-top:43px;">
+                                        <input class="calendarinput" id="tbEffctDtEmpTurnround" tfsname="תאריך תחילת העבודה של העובד המפנה" tfsrequired="" tfsrequiredmark="background" size="8" maxlength="10" value="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תאריך סיום העבודה של העובד המפנה</span>
+                                    <div class="calendarcontainer" style="margin-top:44px;">
+                                        <input class="calendarinput" id="dtCompEmpJobTurn" tfsname="תאריך סיום העבודה של העובד המפנה" tfsrequired="" tfsrequiredmark="background" size="8" maxlength="10" value="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">מסלול הפנסיה שבו הועסק העובד המפנה</span>
+                                    <div style="margin-top:53px;">
+                                        <input style="width:24px;" id="rbTrackPensEmpTurnaroundYes" type="radio" checked="checked" name="מסלול הפנסיה שבו הועסק העובד המפנה" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbTrackPensEmpTurnaroundNo" type="radio" name="מסלול הפנסיה שבו הועסק העובד המפנה" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label"> דרגת העובד המפנה</span>
+                                    <div class="combocontainer" style="margin-top:44px;margin-left:0px;">
+                                        <select class="tfsInputCobmo" id="ddlDegreeEmpTurnAround" tfsname='דרגת העובד המפנה' tfsrequired="" tfsrequiredmark="background" style="display: none;" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=XXX;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">הסיבה לפינוי המשרה</span>
+                                    <textarea id="tbReasonForOffEvacua" tfsname="הסיבה לפינוי המשרה" tfsrequired="" tfsrequiredmark="background" tfsmaxlength="2000" tfsdata="" rows="4" cols="100"></textarea>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">שם המשרה המפונה</span>
+                                    <input style="margin-top:45px;" class="inputtext" id="tbWhereOffcrsEvac" tfsname="שם המשרה המפונה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">דרוג המשרה המפונה</span>
+                                    <input style="margin-top:45px;" class="inputtext" id="tbStarVactedPost" tfsname="דרוג המשרה המפונה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">מתח דרגות של המשרה המפונה</span>
+                                    <input style="margin-top:23px;" class="inputtext" id="tbVoltageLvlVacPOs" tfsname="מתח דרגות של המשרה המפונה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li class="">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">האם קיים עובד זמני המשמש כממלא מקום למשרה</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtnIsTemWorkerYes" type="radio" checked="checked" name="האם קיים עובד זמני המשמש כממלא מקום למשרה" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtnIsTemWorkerNo" type="radio" name="האם קיים עובד זמני המשמש כממלא מקום למשרה" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">תקופת מילוי המקום בחודשים</span>
+                                    <input class="inputtext" id="tbPeriodOdTenure" tfsname='תקופת מילוי המקום בחודשים' tfsdatatype="numeric" tfsrequiredmark="background" tfsrequired="" tfsdata="" value="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">שם פרטי</span>
+                                    <input class="inputtext" id="tbFirstName" tfsname="שם פרטי" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">שם משפחה</span>
+                                    <input class="inputtext" id="tbLastName" tfsname="שם משפחה" tfsmaxlength="100" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                                <li>
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">ת.ז.</span>
+                                    <input class="inputtext" id="tbSoicalSecActing" tfsname="ת.ז." tfsconstraint="checkIdNum('tbSoicalSecActing')" tfsmaxlength="9" value="" tfsrequired="" tfsdata="" />
+                                </li>
+                            </ul>
+                           
+                            <!--END Vacation of office and Hionith SECTION-->
+
+                            <!--START Declarations Authority SECTION-->
+                            <div class="saprate_2"></div>
+                            <div class="heading2"> הצהרות הרשות</div>
+                            <div class="clear"></div>
+                            <ul class="thirdinput">
+                                <li class="onecolumn">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">מכרז זה נבדק ע"י מזכיר/מנכ"ל הרשות והוא עומד</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtTenderHasVerfiByCEOYes" type="radio" checked="checked" name='מכרז זה נבדק ע"י מזכיר/מנכ"ל הרשות והוא עומד' value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtTenderHasVerfiByCEONo" type="radio" name='מכרז זה נבדק ע"י מזכיר/מנכ"ל הרשות והוא עומד' value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="onecolumn">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">מתח הדרגות ודירוג המשרה נבדק ע"י גזבר הרשות והוא תואם את האמור בחוברת מסלולי הקידום לעובדים ברשויות המקומיות</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtStressLvlExamRankOffcrsYes" type="radio" checked="checked" name='מתח הדרגות ודירוג המשרה נבדק ע"י גזבר הרשות והוא תואם את האמור בחוברת מסלולי הקידום לעובדים ברשויות המקומיות' value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtStressLvlExamRankOffcrsNo" type="radio" name='מתח הדרגות ודירוג המשרה נבדק ע"י גזבר הרשות והוא תואם את האמור בחוברת מסלולי הקידום לעובדים ברשויות המקומיות' value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="onecolumn">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">הרשות הגישה את דוח המצבת השנתי כנדרש</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtnAuthPrestAnnuaRptYEs" type="radio" checked="checked" name="הרשות הגישה את דוח המצבת השנתי כנדרש" value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtnAuthPrestAnnuaRptNo" type="radio" name="הרשות הגישה את דוח המצבת השנתי כנדרש" value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="thirdinput">
+                                <li class="onecolumn">
+                                    <span class="myAsteria">*</span>
+                                    <span class="label">המשרה מתוקננת ומתוקצבת בתקציב המאושר של הרשות המקומית ולרשות המקומית יש יכולת תקציבית לתשלום שכר בגין משרה זו</span>
+                                    <div style="margin-top:0px;">
+                                        <input style="width:24px;" id="rbtnStandJobLocalBudFundedYes" type="radio" checked="checked" name='המשרה מתוקננת ומתוקצבת בתקציב המאושר של הרשות המקומית ולרשות המקומית יש יכולת תקציבית לתשלום שכר בגין משרה זו' value="" onchange="" />
+                                        כן
+                                        <input style="width:24px;" id="rbtnStandJobLocalBudFundedNo" type="radio" name='המשרה מתוקננת ומתוקצבת בתקציב המאושר של הרשות המקומית ולרשות המקומית יש יכולת תקציבית לתשלום שכר בגין משרה זו' value="" onchange="" />
+                                        לא
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--END Declarations Authority SECTION-->
+
+
+                            <!--START FORM SUBMIT BUTTON-->
+                            <div class="clear"></div>
+                            <div class="submit2">
+                                <input class="tfsInputText fleft submit2" id="btnSubmit" type="button" value="שלח" tfsaction="submit" />
+                            </div>
+                            <!--END FORM SUBMIT BUTTON-->
+                            
+                            <!--START FOOTER OFFICIAL USAGE-->
+                            <div class="saprate_3"></div>
+                            <div class="heading_3">לשימוש משרדי</div>
+                            <div class="clear"></div>
+                            <div class="officialuse">
+                                <ul class="first-view">
+                                    <li>
+                                        <span class="label">מגיש הבקשה</span>
+                                        <input class="inputtext" id="tbRequested" value="" tfsname="מגיש הבקשה" tfsdata="" />
+                                    </li>
+                                    <li>
+                                        <span class="myAsteria">*</span>
+                                        <span class="label">תאריך שליחת הטופס</span>
+                                        <div class="calendarcontainer">
+                                            <input class="calendarinput" id="dtSubForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שליחת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="myAsteria">*</span>
+                                        <span class="label">תאריך שמירת הטופס</span>
+                                        <div class="calendarcontainer">
+                                            <input class="calendarinput" id="dtMaintForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שמירת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="myAsteria">*</span>
+                                        <span class="label">תאריך יצירת הטופס</span>
+                                        <div class="calendarcontainer">
+                                            <input class="calendarinput" id="tbDtCreaeForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך יצירת הטופס" tfsdata="" tfsrequired="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="first-view top2">
+                                    <li>
+                                        <span class="label">בקשה נעולה</span>
+                                        <input class="inputtext" id="tbReqLocked" value="" disabled="disabled" tfsname="בקשה נעולה " tfsdata="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--END FOOTER OFFICIAL USAGE-->
+                            
+                        </div>
+                        <div class="clear"></div>
+                        <div class="footer">שירות הטפסים הלאומי</div>
+                    </div>
+                    <!--//contnet part end here-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Content/js/application.js"></script>
+    <script src="/Content/js/AGFormLoad.js"></script>
+    <!--<script src="/js/jquery-2.0.2.min.js"></script>-->
+    <script type="text/javascript">
+
+
+        window.onload = function () {
+
+            $('.tfsCalendar').each(function (idx, obj) {
+                $(obj).css("background-image", "url(/img/caleder-view.png)");
+                $(obj).attr('background');
+
+                //$(obj).bind('click', function () {
+
+                //    //console.log('cal');
+                //});
+            });
+
+            $('.attachmentcontainer').find('img').each(function (idx, obj) {
+                $(obj).attr("src", "/img/attach.png");
+
+            });
+
+            $('select').each(function (idx, obj) {
+                var imgbutton = $(obj).parent().find('input[type="button"]');
+                imgbutton.css("background-image", "url(/img/droperrow.png)");
+                imgbutton.css("border", "none");
+            });
+
+
+            $('.Grid .lookup-arrow').each(function (idx, obj) {
+                $(obj).attr("style", "background: url('/img/droperrow.png') no-repeat 1px 1px; border: 1px solid rgb(127, 157, 185); width: 22px; height: 22px; top: 10px !important; left:-7px !important;");
+            });
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+
+            var yyyy = today.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+            var today = dd + '/' + mm + '/' + yyyy;
+            document.getElementById('tbDtCreaeForm').value = today;
+
+            $('.tfsCalendar').each(function (idx, obj) {
+                $(obj).val('');
+            });
+        }
+
+    </script>
+
+</body>
+</html>
