@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="4.1.html" />
+    <Content Include="4.13.html" />
     <Content Include="4.12.html" />
     <Content Include="4.18C.html" />
     <Content Include="4.18B.html" />
