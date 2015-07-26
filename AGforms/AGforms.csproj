@@ -58,6 +58,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="4.8.html" />
     <Content Include="4.1.html" />
     <Content Include="4.13.html" />
     <Content Include="4.12.html" />
@@ -65,7 +66,6 @@
     <Content Include="4.18B.html" />
     <Content Include="4.2.html" />
     <Content Include="4.4.html" />
-    <Content Include="4.11.html" />
     <Content Include="4.9.html" />
     <Content Include="4.5.html" />
     <Content Include="4.10.html" />
