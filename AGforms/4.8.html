@@ -12,6 +12,14 @@
     <link href="/css/HtmlValidatorHelper_hebrew.css" rel="stylesheet" />
     <link href="/css/Calendar_Hebrew.css" rel="stylesheet" />
 
+    <style>
+        
+        .Grid textarea
+        {
+            width:115px !important; 
+        }
+    </style>
+
 </head>
 <body onload="window_onload()" id="mainBody" tofes="">
     <span id="GeneralAttributes" tfslanguage="hebrew" tfsappmode="debug" tfssubmitactionparam="action:postform;url:http://localhost/agformspmweb/setform.aspx;actiononreturn:function{showmessage}"
@@ -97,40 +105,48 @@
                             <!--END HEADER SECTION-->
 
 
-                            <!--START XXX SECTION-->
+                            <!--START TABLE_1 SECTION-->
                             <div class="saprate_2"></div>
                             <div class="clear"></div>
                             <div class="heading_3">הצעת התקציב הרגיל של הרשות המקומית</div>
+                            <div class="heading_4">צד הכנסות(באלפי ₪)</div>
                             <ul class="thirdinput">
                                 <li style="width:916px;">
                                     <div style="width:934px;overflow-x:scroll;direction:rtl;">
                                         <table width="100%" class="Grid largetable" id="tablesection1" >
                                             <thead>
+                                                <tr class="tableSubheader">
+                                                    <th colspan="9">
+                                                        <div class="heading_4">צד ההוצאות (באלפי ₪)</div>
+                                                    </th>
+                                                </tr>
                                                 <tr valign="top">
-                                                    <th style="min-width:40px;">מספר</th>
+                                                    <th style="min-width:40px;">
+                                                        מספר
+                                                    </th>
                                                     <th>
                                                         הסעיף התקציבי
                                                     </th>
                                                     <th>
-                                                        ביצוע שנת x (מחירים שוטפים) 
+                                                        ביצוע שנת <span class="currentyearlesstwo"></span> (מחירים שוטפים)
                                                     </th>
                                                     <th>
-                                                        מסגרת התקציב לשנת x 
+                                                        מסגרת התקציב לשנת <span class="currentyearlessone"></span>  
                                                     </th>
                                                     <th>
-                                                        ביצוע שנת x (מחירים שוטפים)
+                                                        ביצוע שנת <span class="currentyearlessone"></span> (מחירים שוטפים)
                                                     </th>
                                                     <th>
                                                         מקדמים בשימוש הרשות
                                                     </th>
                                                     <th>
-                                                        ביצוע x מקודם למחירי y 
+                                                        ביצוע <span class="currentyearlessone"></span> מקודם למחירי <span class="currentyear"></span> 
                                                     </th>
                                                     <th>
                                                         שינויים כולל התייעלות
                                                     </th>
                                                     <th>
-                                                        מסגרת התקציב לשנת x 
+                                                        מסגרת התקציב לשנת <span class="currentyear"></span> 
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -1141,17 +1157,1316 @@
                                     </div>
                                 </li>
                             </ul>
-                            <!--END XXX SECTION-->
+                            <!--END TABLE_1 SECTION-->
 
-                            <!--START XXX SECTION-->
-                            <div class="saprate_3"></div>
-                            <div class="heading_3">XXX</div>
+                            <!--START TABLE_2 SECTION-->
+                            <div class="saprate_2"></div>
                             <div class="clear"></div>
-                            <ul class="thirdinput"></ul>
-                            <ul class="thirdinput"></ul>
-                            <ul class="thirdinput"></ul>
-                            <ul class="thirdinput"></ul>
-                            <!--END XXX SECTION-->
+                            <div class="heading_3">הרכב הכנסות עצמיות והוצאות מקבילות בתקציב הרגיל של הרשות המקומית</div>
+                           
+                            <ul class="thirdinput">
+                                <li style="width:916px;">
+                                    <div style="width:934px;overflow-x:scroll;direction:rtl;">
+                                        <table width="100%" class="Grid largetable" id="tablesection2">
+                                            <thead>
+                                                <tr class="tableSubheader">
+                                                    <th colspan="6">
+                                                        <div class="heading_4">צד ההוצאות (באלפי ₪)</div>
+                                                    </th>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <th style="min-width:40px;">
+                                                        מספר
+                                                    </th>
+                                                    <th>
+                                                        סעיף תקציבי
+                                                    </th>
+                                                    <th>
+                                                        ביצוע שנת  <span class="currentyearlesstwo"></span> 
+                                                    </th>
+                                                    <th>
+                                                        תקציב שנת  <span class="currentyearlessone"></span>
+                                                    </th>
+                                                    <th>
+                                                        ביצוע שנת  <span class="currentyearlessone"></span> (מחירים שוטפים)
+                                                    </th>
+                                                    <th>
+                                                        תקציב שנת  <span class="currentyear"></span>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>1</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פירעון מלוות מים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>2</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פירעון מלוות מים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>3</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פירעון מלוות מים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>4</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פירעון מלוות מים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>5</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פירעון מלוות מים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ פירעון מלוות לפיתוח</td>
+                                                    <td id="total_Col1_Table1"></td>
+                                                    <td id="total_Col2_Table1"></td>
+                                                    <td id="total_Col3_Table1"></td>
+                                                    <td id="total_Col4_Table1"></td>
+                                                </tr>
+
+
+                                                <!--TBALE 2_b-->
+                                                <tr class="tableSubheader">
+                                                    <th colspan="6">
+                                                        <div class="heading_4">צד ההוצאות (באלפי ₪)</div>
+                                                    </th>
+                                                </tr>
+
+
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>אגרות בניה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>העברה מקרן היטלי השבחה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>העברה מקרן היטלי מים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>העברה מקרן היטלי ביוב</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>העברה מקרן היטלי כבישים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>העברה מקרן היטלי תיעול</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>מכירת נכסים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>אגרות ביוב</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>אגרות מים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2">
+                                                        <span>הכנסות אחרות</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='תקציב שנת  x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='ביצוע שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='תקציב שנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!--END TABLE_2 SECTION-->
+
+
+                            <!--START TABLE_3 SECTION-->
+                            <div class="saprate_2"></div>
+                            <div class="clear"></div>
+                            <div class="heading_3">תקציב (<span class="currentyear"></span>) בפועל לעומת תקציב (<span class="currentyear"></span>) על פי תכנית הבראה לרשות</div>
+                           
+                            <ul class="thirdinput">
+                                <li style="width:916px;">
+                                    <div style="width:934px;overflow-x:scroll;direction:rtl;">
+                                        <table width="100%" class="Grid largetable" id="tablesection3">
+                                            <thead>
+                                                <tr class="tableSubheader">
+                                                    <th colspan="8">
+                                                        <div class="heading_4">צד ההכנסות (באלפי ₪)</div>
+                                                    </th>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <th style="min-width:40px;">
+                                                        מספר
+                                                    </th>
+                                                    <th>
+                                                        הסעיף התקציבי
+                                                    </th>
+                                                    <th>
+                                                        תקציב <span class="currentyearlessone"></span> על פי תכנית הבראה
+                                                    </th>
+                                                    <th>
+                                                        שינויים כולל התייעלות
+                                                    </th>
+                                                    <th>
+                                                        תקציב <span class="currentyearlessone"></span> על פי תכנית הבראה
+                                                    </th>
+                                                    <th>
+                                                        שינויים מתקציב <span class="currentyearlessone"></span>  על פי תכנית הבראה
+                                                    </th>
+                                                    <th>
+                                                        מסגרת התקציב לשנת <span class="currentyearlessone"></span>
+                                                    </th>
+                                                    <th>
+                                                        דברי הסבר
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>1</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>ארנונה כללית</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>2</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>מפעל המים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>3</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>עצמיות חינוך</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>4</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>עצמיות רווחה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>5</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>עצמיות אחר</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table1" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ הכנסות עצמיות</td>
+                                                    <td id="total_Col1_Table1"></td>
+                                                    <td id="total_Col2_Table1"></td>
+                                                    <td id="total_Col3_Table1"></td>
+                                                    <td id="total_Col4_Table1"></td>
+                                                    <td id="total_Col5_Table1"></td>
+                                                    <td id="total_Col6_Table1"></td>
+                                                </tr>
+
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>6</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>תקבולים ממשרד החינוך</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>7</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>תקבולים ממשרד הרווחה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>8</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>תקבולים ממשלתיים אחרים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>9</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>מענק כללי לאיזון</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>10</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>מענקים אחרים ממשרד הפנים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table2" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ תקבולי ממשלה</td>
+                                                    <td id="total_Col1_Table2"></td>
+                                                    <td id="total_Col2_Table2"></td>
+                                                    <td id="total_Col3_Table2"></td>
+                                                    <td id="total_Col4_Table2"></td>
+                                                    <td id="total_Col5_Table2"></td>
+                                                    <td id="total_Col6_Table2"></td>
+                                                </tr>
+
+
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>11</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>תקבולים אחרים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>12</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הכנסות ח"פ ובגין שנים קודמות</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table3" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ הכנסות לפני הנחות בארנונה וכיסוי גרעון נצבר</td>
+                                                    <td id="total_Col1_Table3"></td>
+                                                    <td id="total_Col2_Table3"></td>
+                                                    <td id="total_Col3_Table3"></td>
+                                                    <td id="total_Col4_Table3"></td>
+                                                    <td id="total_Col5_Table3"></td>
+                                                    <td id="total_Col6_Table3"></td>
+                                                </tr>
+
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>13</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הנחות בארנונה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>14</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הכנסה לכיסוי גרעון נצבר</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table4" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ הכנסות ללא מותנה</td>
+                                                    <td id="total_Col1_Table4"></td>
+                                                    <td id="total_Col2_Table4"></td>
+                                                    <td id="total_Col3_Table4"></td>
+                                                    <td id="total_Col4_Table4"></td>
+                                                    <td id="total_Col5_Table4"></td>
+                                                    <td id="total_Col6_Table4"></td>
+                                                </tr>
+
+
+
+                                                <!--TABLE 3 b-->
+                                                <tr class="tableSubheader">
+                                                    <th colspan="8">
+                                                        <div class="heading_4">צד ההוצאות (באלפי ₪)</div>
+                                                    </th>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>15</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הכנסה מותנה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>16</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>שכר כללי</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>17</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פעולות כלליות</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>18</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>מפעל המים</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table5" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ הוצאות כלליות</td>
+                                                    <td id="total_Col1_Table5"></td>
+                                                    <td id="total_Col2_Table5"></td>
+                                                    <td id="total_Col3_Table5"></td>
+                                                    <td id="total_Col4_Table5"></td>
+                                                    <td id="total_Col5_Table5"></td>
+                                                    <td id="total_Col6_Table5"></td>
+                                                </tr>
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>19</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>שכר עובדי חינוך</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>20</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פעולות חינוך</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table6" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ חינוך</td>
+                                                    <td id="total_Col1_Table6"></td>
+                                                    <td id="total_Col2_Table6"></td>
+                                                    <td id="total_Col3_Table6"></td>
+                                                    <td id="total_Col4_Table6"></td>
+                                                    <td id="total_Col5_Table6"></td>
+                                                    <td id="total_Col6_Table6"></td>
+                                                </tr>
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>21</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>שכר עובדי רווחה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>22</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פעולות רווחה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table7" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ רווחה</td>
+                                                    <td id="total_Col1_Table7"></td>
+                                                    <td id="total_Col2_Table7"></td>
+                                                    <td id="total_Col3_Table7"></td>
+                                                    <td id="total_Col4_Table7"></td>
+                                                    <td id="total_Col5_Table7"></td>
+                                                    <td id="total_Col6_Table7"></td>
+                                                </tr>
+
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>23</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פירעון – מלוות מים וביוב</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>24</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>פירעון – מלוות אחר</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table8" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ פירעון מלוות</td>
+                                                    <td id="total_Col1_Table8"></td>
+                                                    <td id="total_Col2_Table8"></td>
+                                                    <td id="total_Col3_Table8"></td>
+                                                    <td id="total_Col4_Table8"></td>
+                                                    <td id="total_Col5_Table8"></td>
+                                                    <td id="total_Col6_Table8"></td>
+                                                </tr>
+
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>25</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הוצאות מימון</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>26</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הוצאות בגין בחירות</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>27</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הוצאות ח"פ ובגין שנים קודמות</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table9" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ הוצאות לפני הנחות בארנונה וכיסוי גרעון נצבר</td>
+                                                    <td id="total_Col1_Table9"></td>
+                                                    <td id="total_Col2_Table9"></td>
+                                                    <td id="total_Col3_Table9"></td>
+                                                    <td id="total_Col4_Table9"></td>
+                                                    <td id="total_Col5_Table9"></td>
+                                                    <td id="total_Col6_Table9"></td>
+                                                </tr>
+
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>28</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הנחות בארנונה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>29</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הוצאות לכיסוי גרעון נצבר</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table10" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ הוצאות ללא מותנה</td>
+                                                    <td id="total_Col1_Table10"></td>
+                                                    <td id="total_Col2_Table10"></td>
+                                                    <td id="total_Col3_Table10"></td>
+                                                    <td id="total_Col4_Table10"></td>
+                                                    <td id="total_Col5_Table10"></td>
+                                                    <td id="total_Col6_Table10"></td>
+                                                </tr>
+
+                                                <tr valign="top">
+                                                    <td style="padding-top:12px;">
+                                                        <span>30</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>הוצאה מותנה</span>
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table11" sumclass="1" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table11" sumclass="2" id="XXX" tfsname='שינויים כולל התייעלות' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table11" sumclass="3" id="XXX" tfsname='תקציב x על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table11" sumclass="4" id="XXX" tfsname='שינויים מתקציב x  על פי תכנית הבראה' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <input class="inputtext sumcolumn_Table11" sumclass="5" id="XXX" tfsname='מסגרת התקציב לשנת x' tfsdatatype="numeric" tfsdata="" value="" />
+                                                    </td>
+                                                    <td>
+                                                        <textarea id="XXXX" tfsname="דברי הסבר" tfsmaxlength="2000" tfsdata="" rows="3" cols="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">סה"כ הוצאות כולל מותנה</td>
+                                                    <td id="total_Col1_Table11"></td>
+                                                    <td id="total_Col2_Table11"></td>
+                                                    <td id="total_Col3_Table11"></td>
+                                                    <td id="total_Col4_Table11"></td>
+                                                    <td id="total_Col5_Table11"></td>
+                                                    <td id="total_Col6_Table2"></td>
+                                                </tr>
+
+
+                                                <!--GRAND TOTAL SECTION 3 SUM-->
+                                                <tr valign="top">
+                                                    <td colspan="2" class="totaltype">עודף גרעון</td>
+                                                    <td id="total_Col1_tablesection3"></td>
+                                                    <td id="total_Col2_tablesection3"></td>
+                                                    <td id="total_Col3_tablesection3"></td>
+                                                    <td id="total_Col4_tablesection3"></td>
+                                                    <td id="total_Col5_tablesection3"></td>
+                                                    <td id="total_Col6_tablesection3"></td>
+                                                </tr>
+
+
+                                              
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <!--END TABLE_3 SECTION-->
+
 
 
                             <!--START FORM SUBMIT BUTTON-->
@@ -1265,74 +2580,49 @@
             });
 
 
-            $("#tablesection1 .sumcolumn_Table1").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 1);
+            //Set Year in Column Header
+            $('.currentyear').each(function (i, obj) {
+                $(obj).text(yyyy);
+            });
+            $('.currentyearlessone').each(function (i, obj) {
+                $(obj).text(yyyy - 1);
+            });
+            $('.currentyearlesstwo').each(function (i, obj) {
+                $(obj).text(yyyy - 2);
             });
 
 
-            $("#tablesection1 .sumcolumn_Table2").keyup(function (event) {
+            //TABLE 1
+            for (var tabcount = 1; tabcount <= 11; tabcount++) {
+                var tableToBind = "#tablesection1 .sumcolumn_Table" + tabcount;
+                $(tableToBind).keyup(GenerateKeyUpHandler_Table1(tabcount));
+            }
+            
+
+            //TABLE 2
+            $("#tablesection2 .sumcolumn_Table1").keyup(function (event) {
                 var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 2);
+                SumTable_TableSection2(sumclassnumber, 1);
             });
 
 
-            $("#tablesection1 .sumcolumn_Table3").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 3);
-            });
-
-
-            $("#tablesection1 .sumcolumn_Table4").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 4);
-            });
-
-
-            $("#tablesection1 .sumcolumn_Table5").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 5);
-            });
-
-
-            $("#tablesection1 .sumcolumn_Table6").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 6);
-            });
-
-
-            $("#tablesection1 .sumcolumn_Table7").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber,7);
-            });
-
-
-
-            $("#tablesection1 .sumcolumn_Table8").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 8);
-            });
-
-
-            $("#tablesection1 .sumcolumn_Table9").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 9);
-            });
-
-            $("#tablesection1 .sumcolumn_Table10").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 10);
-            });
-
-
-            $("#tablesection1 .sumcolumn_Table11").keyup(function (event) {
-                var sumclassnumber = $(this).attr('sumclass');
-                SumTable_TableSection1(sumclassnumber, 11);
-            });
-
+            //TABLE 3
+            for (var tabcount = 1; tabcount <= 11; tabcount++) {
+                var tableToBind = "#tablesection3 .sumcolumn_Table" + tabcount;
+                $(tableToBind).keyup(GenerateKeyUpHandler_Table3(tabcount));
+            }
+            
+            
 
         }
 
+        function GenerateKeyUpHandler_Table1(tabcount) {
+            return function (event) {
+                var sumclassnumber = $(this).attr('sumclass');
+                SumTable_TableSection1(sumclassnumber, tabcount);
+            };
+        }
+       
         function SumTable_TableSection1(sumclassnumber, tableNo)
         {
             var total = 0;
@@ -1348,6 +2638,7 @@
             });
             $('#tablesection1 #total_Col' + sumclassnumber + '_Table' + tableNo).text(total);
             ComputeGrandTotal_TableSection1(sumclassnumber);
+            console.log(sumclassnumber + ',' + tableNo + ',' + total);
         }
 
         function ComputeGrandTotal_TableSection1(sumclassnumber)
@@ -1370,6 +2661,66 @@
            
         }
        
+
+
+        function SumTable_TableSection2(sumclassnumber, tableNo) {
+            var total = 0;
+            $('#tablesection2 .sumcolumn_Table' + tableNo).each(function (i, obj) {
+                if ($(obj).attr('sumclass') == sumclassnumber) {
+
+                    //check if a number
+                    var tbValue = $.trim($(obj).val());
+                    if ($.isNumeric(tbValue)) {
+                        total += parseFloat(tbValue);
+                    }
+                }
+            });
+            $('#tablesection2 #total_Col' + sumclassnumber + '_Table' + tableNo).text(total);
+            ComputeGrandTotal_TableSection1(sumclassnumber);
+        }
+
+
+        ///TABLE 3
+        function GenerateKeyUpHandler_Table3(tabcount) {
+            return function (event) {
+                var sumclassnumber = $(this).attr('sumclass');
+                SumTable_TableSection3(sumclassnumber, tabcount);
+            };
+        }
+
+        function SumTable_TableSection3(sumclassnumber, tableNo) {
+            var total = 0;
+            $('#tablesection3 .sumcolumn_Table' + tableNo).each(function (i, obj) {
+                if ($(obj).attr('sumclass') == sumclassnumber) {
+
+                    //check if a number
+                    var tbValue = $.trim($(obj).val());
+                    if ($.isNumeric(tbValue)) {
+                        total += parseFloat(tbValue);
+                    }
+                }
+            });
+            $('#tablesection3 #total_Col' + sumclassnumber + '_Table' + tableNo).text(total);
+            ComputeGrandTotal_TableSection3(sumclassnumber);
+        }
+        function ComputeGrandTotal_TableSection3(sumclassnumber) {
+            var total = 0;
+            //Loop all tables
+            for (var tableno = 1; tableno <= 11; tableno++) {
+                $('#tablesection3 .sumcolumn_Table' + tableno).each(function (i, obj) {
+                    if ($(obj).attr('sumclass') == sumclassnumber) {
+                        //check if a number
+                        var tbValue = $.trim($(obj).val());
+                        if ($.isNumeric(tbValue)) {
+                            total += parseFloat(tbValue);
+                        }
+                    }
+                });
+            }
+            $('#tablesection3 #total_Col' + sumclassnumber + '_tablesection3').text(total);
+
+        }
+
 
     </script>
 
