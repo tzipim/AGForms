@@ -98,6 +98,11 @@
                                         <select class="tfsInputCobmo" id="ddlContactBody" tfsrequired="" style="display:none;" tfsname="איש קשר בגוף" tfsdatatype="LookUpWindow" tfsvalue="" tfscontainfilter="true" tfsbind="url:http://localhost:17333/handler/OffLineHandle.ashx?combofor=ContBody;nodelist:/root/ComboOptions;text:dataTextAll;value:dataCode;" tfsdata=""></select>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="">
+                                        <input class="tfsInputText fleft submit2_header" value="שלח" id="btnSubmit" type="button" tfsaction="submit" />
+                                    </div>
+                                </li>
                             </ul>
                             <ul class="thirdinput" style="margin-top:38px;">
                                 <li>
@@ -468,44 +473,46 @@
 
 
 
-                            <!--START FOOTER OFFICIAL USAGE-->
                             <div class="saprate_3"></div>
-                            <div class="heading_3">לשימוש משרדי</div>
-                            <div class="clear"></div>
-                            <div class="officialuse">
-                                <ul class="first-view">
-                                    <li>
-                                        <span class="label">מגיש הבקשה</span>
-                                        <input class="inputtext" id="tbRequested" value="" tfsname="מגיש הבקשה" tfsdata="" />
-                                    </li>
-                                    <li>
-                                        <span class="myAsteria">*</span>
-                                        <span class="label">תאריך שליחת הטופס</span>
-                                        <div class="calendarcontainer">
-                                            <input class="calendarinput" id="dtSubForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שליחת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="myAsteria">*</span>
-                                        <span class="label">תאריך שמירת הטופס</span>
-                                        <div class="calendarcontainer">
-                                            <input class="calendarinput" id="dtMaintForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שמירת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="myAsteria">*</span>
-                                        <span class="label">תאריך יצירת הטופס</span>
-                                        <div class="calendarcontainer">
-                                            <input class="calendarinput" id="tbDtCreaeForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך יצירת הטופס" tfsdata="" tfsrequired="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="first-view top2">
-                                    <li>
-                                        <span class="label">בקשה נעולה</span>
-                                        <input class="inputtext" id="tbReqLocked" value="" disabled="disabled" tfsname="בקשה נעולה " tfsdata="" />
-                                    </li>
-                                </ul>
+                            <!--START FOOTER OFFICIAL USAGE-->
+                            <div class="footerwrapper">
+                                <div class="heading_3">לשימוש משרדי</div>
+                                <div class="clear"></div>
+                                <div class="officialuse">
+                                    <ul class="first-view">
+                                        <li>
+                                            <span class="label">מגיש הבקשה</span>
+                                            <input class="inputtext" id="tbRequested" value="" tfsname="מגיש הבקשה" tfsdata="" />
+                                        </li>
+                                        <li>
+                                            <span class="myAsteria">*</span>
+                                            <span class="label">תאריך שליחת הטופס</span>
+                                            <div class="calendarcontainer">
+                                                <input class="calendarinput" id="dtSubForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שליחת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="myAsteria">*</span>
+                                            <span class="label">תאריך שמירת הטופס</span>
+                                            <div class="calendarcontainer">
+                                                <input class="calendarinput" id="dtMaintForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך שמירת הטופס" tfsrequired="" tfsdata="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="myAsteria">*</span>
+                                            <span class="label">תאריך יצירת הטופס</span>
+                                            <div class="calendarcontainer">
+                                                <input class="calendarinput" id="tbDtCreaeForm" size="8" maxlength="10" value="" tfsrequiredmark="background" tfsname="תאריך יצירת הטופס" tfsdata="" tfsrequired="" tfsconstraintalert="false" tfsminlength="6" tfserroralert="title:תאריך שגוי ;message: DD/MM/YYYY:תאריך שגוי" tfsdatatype="date" />
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="first-view top2">
+                                        <li>
+                                            <span class="label">בקשה נעולה</span>
+                                            <input class="inputtext" id="tbReqLocked" value="" disabled="disabled" tfsname="בקשה נעולה " tfsdata="" />
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <!--END FOOTER OFFICIAL USAGE-->
 
@@ -528,9 +535,9 @@
         </div>
     </div>
 
+    <script src="/js/jquery-2.0.2.min.js"></script>
     <script src="/Content/js/application.js"></script>
     <script src="/Content/js/AGFormLoad.js"></script>
-    <!--<script src="/js/jquery-2.0.2.min.js"></script>-->
 
     <script type="text/javascript">
 
