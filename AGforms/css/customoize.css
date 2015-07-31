@@ -407,7 +407,7 @@ ul.footer-4block li span { font-weight:normal; font-size:18px;}
 .checkbox input  { width:25px; height:25px; border:solid 1px #999; color:#666666; font-size:14px; text-align:right; padding-right:5px; float:right; margin-top:-5px !important;}
 .Grid .extratext {width:85px !important; }
 
-.submit2_header { width:131px; height:30px; background:#0066cc; float:left; text-align:center;  line-height:30px; border:none; color:#FFFFFF; margin-top:28px}
+.submit2_header { width:60px; height:30px; background:#0066cc; float:right; text-align:center;  line-height:30px; border:none; color:#FFFFFF; margin-top:28px}
 .submit2_header a { color:#fff; text-decoration:none;}
 
 .currentyearlesstwo, .currentyearlessone, currentyearlessthree {
